@@ -1,6 +1,7 @@
 @prefix : <https://www.w3id.org/statbarnsdc#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdc: <https://www.w3id.org/statbarnsdc> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcam: <http://purl.org/dc/dcam/> .
@@ -19,10 +20,9 @@
                                     owl:imports <https://w3id.org/dpv/2.2/owl#> ,
                                                 <https://w3id.org/dpv/2.2/risk/owl#> ;
                                     dcterms:creator "Trupti Padiya - University of the West of England (UWE Bristol), ORCID:0000-0003-4514-4473 " ;
-                                    dcterms:contributor "Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859 " ,
-                                                        "Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021" ,
-                                                        "Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534" ,
-                                                        "Amy Tilbrook - University of Edinburg, Health Data Research UK, ORCID:0000-0002-0294-2101" ;
+									dcterms:contributor "Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859" , "Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021",
+									"Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534",
+									"Amy Tilbrook - University of Edinburg, Health Data Research UK, ORCID:0000-0002-0294-2101" ;
                                     dcterms:description "Lightweight ontology for the Statbarn Framework used in Output Statistical Disclosoure Contorl (OSDC)" ;
                                     dcterms:license <https://opensource.org/licenses/MIT> ;
                                     dcterms:title "StatbarnSDC Ontology" ;

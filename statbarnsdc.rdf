@@ -1,0 +1,2466 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.w3id.org/statbarnsdc#"
+     xml:base="https://www.w3id.org/statbarnsdc"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdc="https://www.w3id.org/statbarnsdc"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prof="http://www.w3.org/ns/dx/prof/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:scoro="http://purl.org/spar/scoro/"
+     xmlns:schema="https://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:dpv-owl="https://w3id.org/dpv/owl#"
+     xmlns:risk-owl="https://w3id.org/dpv/risk/owl#">
+    <owl:Ontology rdf:about="https://www.w3id.org/statbarnsdc">
+        <owl:versionIRI rdf:resource="https://www.w3id.org/statbarnsdc/1.0"/>
+        <owl:imports rdf:resource="https://w3id.org/dpv/2.2/owl#"/>
+        <owl:imports rdf:resource="https://w3id.org/dpv/2.2/risk/owl#"/>
+        <dcterms:creator>Trupti Padiya - University of the West of England (UWE Bristol), ORCID:0000-0003-4514-4473 </dcterms:creator>
+        <dcterms:contributor>Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859 </dcterms:contributor>
+        <dcterms:contributor>Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021</dcterms:contributor>
+        <dcterms:contributor>Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534</dcterms:contributor>
+        <dcterms:contributor>Amy Tilbrook - University of Edinburg, Health Data Research UK, ORCID:0000-0002-0294-2101</dcterms:contributor>
+        <dcterms:description>Lightweight ontology for the Statbarn Framework used in Output Statistical Disclosoure Contorl (OSDC)</dcterms:description>
+        <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
+        <dcterms:title>StatbarnSDC Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>sdc</vann:preferredNamespacePrefix>
+        <skos:scopeNote>The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control.</skos:scopeNote>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#hasBooleanValue -->
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/statbarnsdc#hasBooleanValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Indicates a boolean value</skos:definition>
+        <skos:prefLabel>hasBooleanValue</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#hasDecimalValue -->
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/statbarnsdc#hasDecimalValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Indicates a decimal value</skos:definition>
+        <skos:prefLabel>hasDecimalValue</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#AdditiveNoise -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#AdditiveNoise">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Random values are added to original data to obscure individual contributions to control disclosure risk.</skos:definition>
+        <skos:prefLabel>AdditiveNoise</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#AdjustedRSquared -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#AdjustedRSquared">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical measure that indicates how well a regression model explains the variability of the dependent variable.</skos:definition>
+        <skos:prefLabel>AdjustedRSquared</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Aggregation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Aggregation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A risk mitigation technique where individual data are combined into larger groups or summaries to reduce the risk of identifying or inferring information about specific individuals.</skos:definition>
+        <skos:prefLabel>Aggregation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#AlluvialFlow -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#AlluvialFlow">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A type of diagram that visualizes changes in categorical data over time or between stages, showing how groups split, merge, or flow from one category to another.</skos:definition>
+        <skos:prefLabel>AlluvialFlow</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#AnalysisOfVariance -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#AnalysisOfVariance">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Also reffered to as ANOVA is a statistical method used to compare the means of three or more groups.</skos:definition>
+        <skos:prefLabel>AnalysisOfVariance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Ancova -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Ancova">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Combines ANOVA and regression to compare group means while controlling for one or more continuous covariates.</skos:definition>
+        <skos:prefLabel>Ancova</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#AuxiliaryInformation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#AuxiliaryInformation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRiskLevel"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/risk/owl#VeryHighRisk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The risk that external data, when combined with published statistical outputs, will allow inferences or identification of individuals, increasing disclosure risk beyond what the output alone suggests.</skos:definition>
+        <skos:prefLabel>AuxiliaryInformation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#BarGraph -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#BarGraph">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#LinearAggregations"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A chart that represents categorical data with rectangular bars, where the length of each bar is proportional to the value or frequency of the category.</skos:definition>
+        <skos:prefLabel>BarGraph</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#BartlettsTestOfSphericity -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#BartlettsTestOfSphericity">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical test used to check whether a correlation matrix is an identity matrix.</skos:definition>
+        <skos:prefLabel>BartlettsTestOfSphericity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#BetaCoefficient -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#BetaCoefficient">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#LinearAggregations"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A standardized regression coefficient that indicates the strength and direction of the relationship between a predictor and the outcome.</skos:definition>
+        <skos:prefLabel>BetaCoefficient</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#BinaryLogisticRegression -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#BinaryLogisticRegression">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical model used to predict the probability of a binary outcome.</skos:definition>
+        <skos:prefLabel>BinaryLogisticRegression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#BoxPlot -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#BoxPlot">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Position"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A graphical display that summarizes the distribution of a dataset using its minimum, first quartile, median, third quartile, and maximum, often highlighting outliers.</skos:definition>
+        <skos:prefLabel>BoxPlot</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#BoxsTestOfEqualityOfCovarianceMatrices -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#BoxsTestOfEqualityOfCovarianceMatrices">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical test used to assess whether the covariance matrices of multiple groups are equal.</skos:definition>
+        <skos:prefLabel>BoxsTestOfEqualityOfCovarianceMatrices</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CalculatedRatios -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CalculatedRatios">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#AuxiliaryInformation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Dominance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Calculated ratios refer to measures investigating relationship, comparison or relative magnitude between variables. These can includes odds ratios, risk ratios, or hazard ratios.</skos:definition>
+        <skos:prefLabel>CalculatedRatios</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CanonicalCorrelation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CanonicalCorrelation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measures the relationship between two sets of variables.</skos:definition>
+        <skos:prefLabel>CanonicalCorrelation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CategoricalAggregation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CategoricalAggregation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Aggregation"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Combining categories of a categorical variable to reduce the granularity of the data to reduce disclosure risk.</skos:definition>
+        <skos:prefLabel>CategoricalAggregation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CellKeyRounding -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CellKeyRounding">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Rounding"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Cell values in tables are rounded based on a key or algorithm to reduce risk.</skos:definition>
+        <skos:prefLabel>CellKeyRounding</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ChiSquaredTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ChiSquaredTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical test used to determine whether there is a significant association between categorical variables.</skos:definition>
+        <skos:prefLabel>ChiSquaredTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ClassDisclosure -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ClassDisclosure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#RequiredZeroCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The risk that released statistical outputs allow an attacker to infer details about an individual, as a result of their membership of a sensitive category or class who all share the same values  for some variables.</skos:definition>
+        <skos:prefLabel>ClassDisclosure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Clusters -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Clusters">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statbarn classification that covers output of cluster analysis. Cluster analysis is a statistical technique used to classify or group similar objects or individuals based on their characteristics or attributes. It aims to identify patterns, similarities, or relationships within a dataset by grouping data points into clusters.</skos:definition>
+        <skos:prefLabel>Clusters</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CochransQTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CochransQTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical test used to determine whether there are differences in proportions across three or more related groups for binary outcomes.</skos:definition>
+        <skos:prefLabel>CochransQTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CoefficientOfDetermination -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CoefficientOfDetermination">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical measure that indicates the proportion of variance in the dependent variable explained by the independent variable(s) in a regression model.</skos:definition>
+        <skos:prefLabel>CoefficientOfDetermination</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CohensD -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CohensD">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measure of effect size that quantifies the difference between two group means in terms of standard deviation units.</skos:definition>
+        <skos:prefLabel>CohensD</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CohensKappaCoefficient -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CohensKappaCoefficient">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measures the level of agreement between two raters or observers for categorical data, adjusting for agreement occurring by chance.</skos:definition>
+        <skos:prefLabel>CohensKappaCoefficient</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ConfidenceIntervals -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ConfidenceIntervals">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Range of values, derived from sample data, that likely contain the true population parameter with a specified level of confidence.</skos:definition>
+        <skos:prefLabel>ConfidenceIntervals</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ContrastCoefficients -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ContrastCoefficients">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Numerical weights assigned to group means in ANOVA or regression.</skos:definition>
+        <skos:prefLabel>ContrastCoefficients</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ControlledRounding -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ControlledRounding">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Rounding"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Table or cell values are rounded according to specific rules to prevent disclosure risk.</skos:definition>
+        <skos:prefLabel>ControlledRounding</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CorrelationCoefficients -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CorrelationCoefficients">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowDOF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Correlation coefficients are statistical measures that quantify the relationship between two or more variables. This includes measures such as regression estimates, as well as single statistics such as Pearson&apos;s r, Spearmans&apos;s rank correlation coefficient (ρ) and Kendall&apos;s rank correlation coefficient (τ).</skos:definition>
+        <skos:prefLabel>CorrelationCoefficients</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Covariates -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Covariates">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Continuous or categorical variables that are included in a statistical model to account for or control their effect on the outcome variable.</skos:definition>
+        <skos:prefLabel>Covariates</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CoxSnellRSquared -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CoxSnellRSquared">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measure of goodness-of-fit for logistic regression models.</skos:definition>
+        <skos:prefLabel>CoxSnellRSquared</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#CramersV -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#CramersV">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measure of association between two categorical variables.</skos:definition>
+        <skos:prefLabel>CramersV</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Crosstabs -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Crosstabs">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A tabular method for displaying the frequency distribution of two or more categorical variables.</skos:definition>
+        <skos:prefLabel>Crosstabs</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Differencing -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Differencing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A risk that combining multiple outputs allows to deduce sensitive information about individuals by analyzing changes or differences between them.</skos:definition>
+        <skos:prefLabel>Differencing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#DiscriminantFunctionAnalysis -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#DiscriminantFunctionAnalysis">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical technique used to classify observations into predefined groups and determine which variables best separate those groups.</skos:definition>
+        <skos:prefLabel>DiscriminantFunctionAnalysis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#DiscriminantValidity -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#DiscriminantValidity">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Extent to which a construct or measurement is truly distinct from other constructs, showing it measures what it is intended to and not something else.</skos:definition>
+        <skos:prefLabel>DiscriminantValidity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Dominance -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Dominance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#OutlierRemoval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Rounding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#NKCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PQCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The risk that a small number of individuals contribute a disproportionately large share of a cells value, making it easier to identify or infer their data.</skos:definition>
+        <skos:prefLabel>Dominance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#EigenvaluesScreePlots -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#EigenvaluesScreePlots">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Eigenvalues measure the amount of variance explained by each factor, and a scree plot visualizes these values to help decide how many factors to retain.</skos:definition>
+        <skos:prefLabel>EigenvaluesScreePlots</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Endpoints -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Endpoints">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ClassDisclosure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowCount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Minimum and maximum values for a variable.</skos:definition>
+        <skos:prefLabel>Endpoints</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#EtaSquared -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#EtaSquared">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measure of effect size that indicates the proportion of total variance in a dependent variable explained by an independent variable in ANOVA or similar analyses.</skos:definition>
+        <skos:prefLabel>EtaSquared</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#FactorAnalysis -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#FactorAnalysis">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CalculatedRatios"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical method used to identify underlying latent factors that explain the patterns of correlations among observed variables.</skos:definition>
+        <skos:prefLabel>FactorAnalysis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#FreqeuncyTable -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#FreqeuncyTable">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>This class covers frequencies, i.e, counts of things, either in tables (most common), in certain graphs such as histograms or bar charts, or single as in a description of the number of survey participants. This also includes frequencies expressed as a proportion of some total.</skos:definition>
+        <skos:prefLabel>FreqeuncyTable</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Frequencies -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Frequencies">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ClassDisclosure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Differencing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowCount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>This class covers frequencies ie counts of things, either in tables (most common), in certain graphs such as histograms or bar charts, or single as in a description of the number of survey participants. This also includes frequencies expressed as a proportion of some total.</skos:definition>
+        <skos:prefLabel>Frequencies</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#FriedmanTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#FriedmanTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Non-parametric statistical test used to detect differences in treatments across multiple related groups.</skos:definition>
+        <skos:prefLabel>FriedmanTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#GeneralLinearModel -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#GeneralLinearModel">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Models a continuous outcome as a linear combination of predictor variables.</skos:definition>
+        <skos:prefLabel>GeneralLinearModel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#GeographicalAggregation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#GeographicalAggregation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Aggregation"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Combining spatial or location-based data into larger geographic units to reduce disclosure risk</skos:definition>
+        <skos:prefLabel>GeographicalAggregation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#GiniCoefficient -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#GiniCoefficient">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowCount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The Gini coefficient is used to summarise inequality within a population. The Lorenz curve is its graphical counterpart.</skos:definition>
+        <skos:prefLabel>GiniCoefficient</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#GiniCurves -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#GiniCurves">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#GiniCoefficient"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A graphical representation showing the cumulative proportion of the population against the cumulative proportion of the resource.</skos:definition>
+        <skos:prefLabel>GiniCurves</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HazardRatio -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HazardRatio">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure used in survival analysis that compares the hazard (event rate) between two groups over time.</skos:definition>
+        <skos:prefLabel>HazardRatio</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HazardSurvivalTables -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HazardSurvivalTables">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ImplicitTables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowDOF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>These are tables used to analyse and model survival or failure times in event-based data and business data. Commonly seen in epidemiology, actuarial science and clinical research among others. These can also underpin visualisations such as Kaplen-Meier.</skos:definition>
+        <skos:prefLabel>HazardSurvivalTables</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HazardTables -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HazardTables">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#HazardSurvivalTables"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Tables that summarize the hazard (event) rates over time.</skos:definition>
+        <skos:prefLabel>HazardTables</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Heatmap -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Heatmap">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A graphical representation of data where values are displayed as colors in a matrix or grid.</skos:definition>
+        <skos:prefLabel>Heatmap</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HerfindahlHirschmanIndex -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HerfindahlHirschmanIndex">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#NonLinearConcentrationRatios"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of concentration calculated by summing the squares of the shares of all elements.</skos:definition>
+        <skos:prefLabel>HerfindahlHirschmanIndex</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Histogram -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Histogram">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A graphical representation of a dataset that displays the frequency of values within consecutive intervals.</skos:definition>
+        <skos:prefLabel>Histogram</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HomogeneityOfRegression -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HomogeneityOfRegression">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>An assumption in ANCOVA stating that the relationship (slope) between the covariate and the dependent variable is the same across all groups.</skos:definition>
+        <skos:prefLabel>HomogeneityOfRegression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HomogeneityOfVariance -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HomogeneityOfVariance">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>An assumption in statistical tests (like ANOVA) that the variances of the dependent variable are equal across all groups or samples being compared.</skos:definition>
+        <skos:prefLabel>HomogeneityOfVariance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HomogeneityOfVarianceCovarianceMatrices -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HomogeneityOfVarianceCovarianceMatrices">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>An assumption in multivariate analyses (like MANOVA) that the variance and covariance structure of the dependent variables is equal across all groups.</skos:definition>
+        <skos:prefLabel>HomogeneityOfVarianceCovarianceMatrices</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#HosmerLemeshowTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#HosmerLemeshowTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical test used in logistic regression to assess the goodness-of-fit of the model by comparing observed and predicted event probabilities across subgroups.</skos:definition>
+        <skos:prefLabel>HosmerLemeshowTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ImplicitTables -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ImplicitTables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRiskLevel"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/risk/owl#VeryHighRisk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A risk of tables or outputs that allow sensitive information to be inferred indirectly through calculations or combinations of published data.</skos:definition>
+        <skos:prefLabel>ImplicitTables</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#IndependentTtests -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#IndependentTtests">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical test used to compare the means of two independent groups to determine if there is a significant difference between them.</skos:definition>
+        <skos:prefLabel>IndependentTtests</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#InterquartileRange -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#InterquartileRange">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Position"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The range between the first quartile and third quartile of a dataset.</skos:definition>
+        <skos:prefLabel>InterquartileRange</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#KValue -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#KValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasDecimalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A threshold parameter used in the NK disclosure risk test to determine whether a small number of records dominate a cell’s contribution, indicating potential disclosure risk.</skos:definition>
+        <skos:prefLabel>KValue</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#KaiserMeyerOlkinTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#KaiserMeyerOlkinTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of sampling adequacy for factor analysis, indicating whether the data are suitable for detecting underlying factors.</skos:definition>
+        <skos:prefLabel>KaiserMeyerOlkinTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#KaplanMeier -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#KaplanMeier">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#HazardSurvivalTables"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical method used in survival analysis to estimate the probability of survival over time.</skos:definition>
+        <skos:prefLabel>KaplanMeier</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#KappaMeasureOfAgreement -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#KappaMeasureOfAgreement">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistic that quantifies the agreement between two raters or observers for categorical data, adjusting for chance agreement.</skos:definition>
+        <skos:prefLabel>KappaMeasureOfAgreement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#KendallsRank -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#KendallsRank">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of strength and direction of association between two ranked variables.</skos:definition>
+        <skos:prefLabel>KendallsRank</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#KernelEstimates -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#KernelEstimates">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Estimate the probability density function or distribution.</skos:definition>
+        <skos:prefLabel>KernelEstimates</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Kolmogorov-SmirnovTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Kolmogorov-SmirnovTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical test used to compare a sample distribution with a reference probability distribution or to compare two sample distributions, assessing whether they differ significantly.</skos:definition>
+        <skos:prefLabel>Kolmogorov-SmirnovTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Kruskal-WallisTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Kruskal-WallisTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A non-parametric statistical test used to compare the medians of three or more independent groups to determine if they come from the same distribution.</skos:definition>
+        <skos:prefLabel>Kruskal-WallisTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Kurtosis -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Kurtosis">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Shape"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical measure that describes the “tailedness” or peakedness of a data distribution.</skos:definition>
+        <skos:prefLabel>Kurtosis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Lambda -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Lambda">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of association for categorical variables, indicating the proportional reduction in error when predicting the dependent variable using the independent variable.</skos:definition>
+        <skos:prefLabel>Lambda</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LevenesTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LevenesTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical test used to assess the equality of variances (homogeneity of variance) across two or more groups.</skos:definition>
+        <skos:prefLabel>LevenesTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LineGraph -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LineGraph">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A chart that connects data points with lines to show trends, patterns, or changes of a variable over a continuous scale.</skos:definition>
+        <skos:prefLabel>LineGraph</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LinearAggregations -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LinearAggregations">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Differencing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Dominance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowCount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>This class covers sums, means, ratios etc.  These are stats that provide a snapshot of the data&apos;s characteristics that don&apos;t relate to any one data point and instead are calculated with many or all of the points in a data set. This class also includes linear concentration ratios (eg share of the top N observations).</skos:definition>
+        <skos:prefLabel>LinearAggregations</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LinearRegressionCoefficients -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LinearRegressionCoefficients">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Numerical values in a linear regression model that quantify the effect of each predictor variable on the outcome.</skos:definition>
+        <skos:prefLabel>LinearRegressionCoefficients</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LinkedMultilevelTables -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LinkedMultilevelTables">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Multilevel and linked tables are used to summarize and analyze the relationship between multiple categorical variables. These often analyse nested categorical data in formats such as two or three way contingency tables or hierarchical contingency tables.</skos:definition>
+        <skos:prefLabel>LinkedMultilevelTables</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LogLinearForHigherOrderTables -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LogLinearForHigherOrderTables">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical model used to analyze the relationships among three or more categorical variables.</skos:definition>
+        <skos:prefLabel>LogLinearForHigherOrderTables</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LogisticRegression -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LogisticRegression">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical model used to predict the probability of a binary or categorical outcome.</skos:definition>
+        <skos:prefLabel>LogisticRegression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Logit -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Logit">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Used as the link function in logistic regression.</skos:definition>
+        <skos:prefLabel>Logit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LongitudinalEstimation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LongitudinalEstimation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical method used to analyze data collected from the same subjects over time</skos:definition>
+        <skos:prefLabel>LongitudinalEstimation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LowCount -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LowCount">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Rounding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumThresholdCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The disclosure risk that arises when cells in a table have very few observations, making it easier to identify or infer information about the individuals contributing to those cells.</skos:definition>
+        <skos:prefLabel>LowCount</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#LowDOF -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#LowDOF">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Aggregation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#OutlierRemoval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumDoFCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The risk that statistical outputs are based on very few independent pieces of information make it easier to deduce individual data or sensitive values.</skos:definition>
+        <skos:prefLabel>LowDOF</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MahalanobisDistance -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MahalanobisDistance">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Shape"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of the distance between a point and a distribution.</skos:definition>
+        <skos:prefLabel>MahalanobisDistance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Mancova -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Mancova">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical technique that extends MANOVA by including covariates.</skos:definition>
+        <skos:prefLabel>Mancova</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MannWhitneyUTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MannWhitneyUTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A non-parametric test used to compare differences between two independent groups on an ordinal or continuous outcome when the data do not assume a normal distribution.</skos:definition>
+        <skos:prefLabel>MannWhitneyUTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MauchlySphericityTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MauchlySphericityTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical test used in repeated-measures ANOVA to assess whether the variances of the differences between all combinations of related groups are equal.</skos:definition>
+        <skos:prefLabel>MauchlySphericityTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Maximum -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Maximum">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Endpoints"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The highest observed or recorded values of outcome.</skos:definition>
+        <skos:prefLabel>Maximum</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#McNemarsTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#McNemarsTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical test used to analyze paired nominal data, typically to determine whether there is a significant change or difference in proportions for two related groups.</skos:definition>
+        <skos:prefLabel>McNemarsTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Mean -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Mean">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#LinearAggregations"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The arithmetic average of a set of values, calculated by summing all values and dividing by their count.</skos:definition>
+        <skos:prefLabel>Mean</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MeanPlots -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MeanPlots">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#LinearAggregations"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Graphs that display the average values of a variable for different groups or conditions.</skos:definition>
+        <skos:prefLabel>MeanPlots</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Median -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Median">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Position"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The middle value of a dataset when the values are arranged in order, dividing the data into two equal halves.</skos:definition>
+        <skos:prefLabel>Median</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Minimum -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Minimum">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Endpoints"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The lowest observed or recorded values of outcome.</skos:definition>
+        <skos:prefLabel>Minimum</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MinimumDOF -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MinimumDOF">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasDecimalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The lowest acceptable number of &apos;residual degrees of freedom&apos;  required for a statistical output to be considered safe from disclosure risk. Calculated as the number of independent data points minus the number of learned paramters in a model.</skos:definition>
+        <skos:prefLabel>MinimumDOF</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MinimumDoFCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MinimumDoFCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumDOF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>To check model&apos;s residual degrees of Freedom (DoF) meets  or exceeds the specified value of MinimumDoF.</skos:definition>
+        <skos:prefLabel>MinimumDoFCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MinimumThreshold -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MinimumThreshold">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasDecimalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The smallest allowable value or count for a data cell or statistic to be safely released without risking disclosure of individual information.</skos:definition>
+        <skos:prefLabel>MinimumThreshold</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MinimumThresholdCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MinimumThresholdCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumThreshold"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>To check the sizes if subgroups (e.g. table cells) meet or exceed the specified value of MinimumThreshold.</skos:definition>
+        <skos:prefLabel>MinimumThresholdCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Mode -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Mode">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ClassDisclosure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Differencing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The value or values that occur most frequently in a dataset. It represents the peak or highest point on a distribution&apos;s histogram.</skos:definition>
+        <skos:prefLabel>Mode</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MultinomialLogit -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MultinomialLogit">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical model used to predict outcomes where the dependent variable has more than two discrete categories.</skos:definition>
+        <skos:prefLabel>MultinomialLogit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MultipleRegression -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MultipleRegression">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical method that models the relationship between one continuous dependent variable and two or more independent variables.</skos:definition>
+        <skos:prefLabel>MultipleRegression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MultipleRounding -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MultipleRounding">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Rounding"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Values are rounded to the nearest multiple of a chosen base to reduce disclosure risk.</skos:definition>
+        <skos:prefLabel>MultipleRounding</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MultiplicativeNoise -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MultiplicativeNoise">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Original data values are multiplied by random factors to mask individual contributions to reduce disclosure risk.</skos:definition>
+        <skos:prefLabel>MultiplicativeNoise</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#MultivariateAnalysisOfVariance -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#MultivariateAnalysisOfVariance">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Also reffered to as MANOVA, is a statistical technique that tests for differences across groups on two or more dependent variables simultaneously.</skos:definition>
+        <skos:prefLabel>MultivariateAnalysisOfVariance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#NKCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#NKCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#KValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#NValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>NK test utilises the value specified as Nvalue and Kvalue.</skos:definition>
+        <skos:prefLabel>NKCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#NValue -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#NValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasDecimalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A threshold specifying the minimum number of observations required in a cell or output to ensure it meets disclosure control criteria.</skos:definition>
+        <skos:prefLabel>NValue</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#NagelkerkeRSquared -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#NagelkerkeRSquared">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A pseudo R-squared measure for logistic regression.</skos:definition>
+        <skos:prefLabel>NagelkerkeRSquared</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Noise -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Noise">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Random or controlled perturbation added to data or outputs to mask individual contributions and reduce disclosure risk.</skos:definition>
+        <skos:prefLabel>Noise</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#NonLinearConcentrationRatios -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#NonLinearConcentrationRatios">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Dominance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowCount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Non-linear concentration ratios are statistical measures used to assess degree of concentration or dispersion. The most common of these are the Herfindahl–Hirschman index.</skos:definition>
+        <skos:prefLabel>NonLinearConcentrationRatios</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#NumericalAggregation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#NumericalAggregation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Aggregation"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Summarizing or combining individual numerical values to reduce disclosure risk</skos:definition>
+        <skos:prefLabel>NumericalAggregation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#OddRatios -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#OddRatios">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CalculatedRatios"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of association that quantifies how the odds of an event occurring change with exposure to a predictor.</skos:definition>
+        <skos:prefLabel>OddRatios</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#OmnibusTestsOfModelCoefficients -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#OmnibusTestsOfModelCoefficients">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical tests that assess whether a set of predictors, taken together, significantly improves the fit of a model compared to a null model with no predictors.</skos:definition>
+        <skos:prefLabel>OmnibusTestsOfModelCoefficients</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#OutlierRemoval -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#OutlierRemoval">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Extreme or unusual values are removed or masked to prevent identification of individuals and reduce disclosure risk.</skos:definition>
+        <skos:prefLabel>OutlierRemoval</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PQCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PQCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PRatio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>PQ test utilises the value specified as PRatio</skos:definition>
+        <skos:prefLabel>PQCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PRatio -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PRatio">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasDecimalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure used to assess the proportion of a cell’s value contributed by a single or small group of individuals, indicating potential dominance and disclosure risk.</skos:definition>
+        <skos:prefLabel>PRatio</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PairedTtests -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PairedTtests">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical test used to compare the means of two related or matched groups to determine if there is a significant difference between them.</skos:definition>
+        <skos:prefLabel>PairedTtests</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PanelDataModels -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PanelDataModels">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical models designed to analyze data that follow the same units over time for both cross-sectional and time-series variation.</skos:definition>
+        <skos:prefLabel>PanelDataModels</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ParallelAnalysis -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ParallelAnalysis">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A technique in factor analysis or principal component analysis used to determine the number of factors or components to retain by comparing the observed eigenvalues with those obtained from randomly generated data.</skos:definition>
+        <skos:prefLabel>ParallelAnalysis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PartialCorrelationCoefficients -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PartialCorrelationCoefficients">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measures the relationship between two variables while controlling the effect of one or more additional variables.</skos:definition>
+        <skos:prefLabel>PartialCorrelationCoefficients</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PartialEtaSquared -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PartialEtaSquared">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of effect size in ANOVA that indicates the proportion of variance in the dependent variable explained by an independent variable, after controlling for other variables.</skos:definition>
+        <skos:prefLabel>PartialEtaSquared</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PearsonsProductMomentCorrelationCoefficient -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PearsonsProductMomentCorrelationCoefficient">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistic that measures the strength and direction of the linear relationship between two continuous variables.</skos:definition>
+        <skos:prefLabel>PearsonsProductMomentCorrelationCoefficient</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PearsonsR -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PearsonsR">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistic that quantifies the strength and direction of the linear relationship between two continuous variables.</skos:definition>
+        <skos:prefLabel>PearsonsR</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PhiCoefficient -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PhiCoefficient">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of association between two binary variables.</skos:definition>
+        <skos:prefLabel>PhiCoefficient</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PieChart -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PieChart">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A circular chart that represents proportions of a whole by dividing the circle into slices corresponding to the relative sizes of categories.</skos:definition>
+        <skos:prefLabel>PieChart</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Position -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Position">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ClassDisclosure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowCount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Position refers to a statistic that provides information on a central or typical value in a dataset. These include data points such as median, percentiles, or inter-quartile range.</skos:definition>
+        <skos:prefLabel>Position</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>To check for presence of linked tables and utilises value from PresenceOfLinkedTables. This will typically be a manual process</skos:definition>
+        <skos:prefLabel>PresenceOfLinkedTableCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasBooleanValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure specifying if there is a possibility that sensitive information can be inferred by combining multiple related tables, even if each table alone does not disclose individual data.</skos:definition>
+        <skos:prefLabel>PresenceOfLinkedTables</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PresenceOfZero -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfZero">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasBooleanValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A mesure specifying there are cells with a value of zero, which can reveal information about the absence of certain individuals or events.</skos:definition>
+        <skos:prefLabel>PresenceOfZero</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfZero"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>To check for presence of zeros and utilises value from PresenceOfZero.</skos:definition>
+        <skos:prefLabel>PresenceOfZeroCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PrevalenceRatio -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PrevalenceRatio">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure that compares the proportion of individuals with a condition in an exposed group to that in an unexposed group.</skos:definition>
+        <skos:prefLabel>PrevalenceRatio</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PrimarySuppression -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PrimarySuppression">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Masking of cells containing sensitive or high-risk values in a table to prevent disclosure.</skos:definition>
+        <skos:prefLabel>PrimarySuppression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PrincipalComponentAnalysis -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PrincipalComponentAnalysis">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A dimensionality reduction technique that transforms correlated variables into a smaller set of uncorrelated components while retaining most of the original variance.</skos:definition>
+        <skos:prefLabel>PrincipalComponentAnalysis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Probit -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Probit">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A regression model used to predict the probability of a binary outcome by applying the inverse standard normal cumulative distribution function.</skos:definition>
+        <skos:prefLabel>Probit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#PseudoRSquared -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#PseudoRSquared">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Measure used in models like logistic regression to indicate the proportion of variation in the dependent variable explained by the model.</skos:definition>
+        <skos:prefLabel>PseudoRSquared</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Quartiles -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Quartiles">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Position"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Values that divide a dataset into four equal parts.</skos:definition>
+        <skos:prefLabel>Quartiles</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#RSquared -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#RSquared">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical measure that indicates the proportion of variance in the dependent variable explained by the independent variable(s) in a regression model.</skos:definition>
+        <skos:prefLabel>RSquared</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Range -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Range">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Endpoints"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The difference between the maximum and minimum values of a dataset, summarising the dispersion of the data.</skos:definition>
+        <skos:prefLabel>Range</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#RequiredZeroCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#RequiredZeroCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ZeroCheckDecider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Indicates if a zerocheck is required and utilises the value from ZeroCheckDecider.</skos:definition>
+        <skos:prefLabel>RequiredZeroCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#RiskRatios -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#RiskRatios">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CalculatedRatios"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure that compares the probability of an event occurring in an exposed group to the probability in an unexposed group.</skos:definition>
+        <skos:prefLabel>RiskRatios</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Rounding -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Rounding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Numerical values are rounded to a specified precision to reduce the risk.</skos:definition>
+        <skos:prefLabel>Rounding</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ScatterGraph -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ScatterGraph">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Also reffered to as scatter plot, a chart that displays individual data points on a two-dimensional plane, showing the relationship or correlation between two continuous variables.</skos:definition>
+        <skos:prefLabel>ScatterGraph</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#SecondarySuppression -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#SecondarySuppression">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The additional suppression of non-sensitive cells in a table to prevent disclosure.</skos:definition>
+        <skos:prefLabel>SecondarySuppression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Shape -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Shape">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowDOF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Shape outputs refer to measures that describe or show the characteristics of data distributions. They provide information on elements such as symmetry, peaks and tail behaviour. These comprise standard deviation, skewness, and kurtosis.</skos:definition>
+        <skos:prefLabel>Shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#SimpleConcentrationRatio -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#SimpleConcentrationRatio">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure that quantifies the dominance or contribution of the largest values or components in a dataset.</skos:definition>
+        <skos:prefLabel>SimpleConcentrationRatio</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Skewness -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Skewness">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Shape"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistical measure that describes the asymmetry of a data distribution around its mean.</skos:definition>
+        <skos:prefLabel>Skewness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#SmoothedHistogram -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#SmoothedHistogram">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A visualization of a dataset’s distribution where raw histogram counts are smoothed to show a continuous approximation of the underlying probability density.</skos:definition>
+        <skos:prefLabel>SmoothedHistogram</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#SpearmansRankCorrelationCoefficient -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#SpearmansRankCorrelationCoefficient">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Non-parametric measure that assesses the strength and direction of the monotonic relationship between two ranked or ordinal variables.</skos:definition>
+        <skos:prefLabel>SpearmansRankCorrelationCoefficient</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#StandardDeviation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#StandardDeviation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Shape"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of how spread out or dispersed the values in a dataset are from the mean.</skos:definition>
+        <skos:prefLabel>StandardDeviation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#StandardisedRegressionCoefficients -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#StandardisedRegressionCoefficients">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Regression coefficients that have been rescaled to have unit variance, allowing the comparison of the relative strength of different predictors in a regression model.</skos:definition>
+        <skos:prefLabel>StandardisedRegressionCoefficients</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Statbarn -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Statbarn">
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The Statbarn taxonomy is a framework that classifies types of statisticalanalyses by their disclosure characteristics, including risk, exceptions, and mitigation measures for its use in output statistical disclosure control.</skos:definition>
+        <skos:prefLabel>Statbarn</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#StatbarnDataCheck -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#StatbarnDataCheck">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition> To check whether the data related to statbarn is disclosive and utilises value from StatbarnRelevantShowData.</skos:definition>
+        <skos:prefLabel>StatbarnDataCheck</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasBooleanValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure specifying there is relevant data or information that could be disclosive relevant to the statbarn.</skos:definition>
+        <skos:prefLabel>StatbarnRelevantShowData</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Statbarn"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#LowDOF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Statistical tests are used to make inferences and observe differences in data. These involve a wide range of tests including t-tests, p-values, F-tests, or confidence intervals.</skos:definition>
+        <skos:prefLabel>StatisticalHypothesisTests</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#StructuralEquationModelling -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#StructuralEquationModelling">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A multivariate statistical technique that analyzes complex relationships among observed and latent variables, combining factor analysis and multiple regression into a single model.</skos:definition>
+        <skos:prefLabel>StructuralEquationModelling</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Sum -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Sum">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#LinearAggregations"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>The total obtained by adding together all the values.</skos:definition>
+        <skos:prefLabel>Sum</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#Suppression -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#Suppression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Sensitive cells or values are deliberately withheld or hidden to prevent disclosure risk.</skos:definition>
+        <skos:prefLabel>Suppression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#SurvivalTables -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#SurvivalTables">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#HazardSurvivalTables"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Tables that show the probability of survival at different time intervals</skos:definition>
+        <skos:prefLabel>SurvivalTables</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#TargetedNoise -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#TargetedNoise">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Noise is selectively added to specific high-risk values or records to reduce disclosure risk.</skos:definition>
+        <skos:prefLabel>TargetedNoise</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#TemporalAggregation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#TemporalAggregation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Aggregation"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Combining data over time periods to reduce disclosure risk</skos:definition>
+        <skos:prefLabel>TemporalAggregation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ThreeStageLeastSquares -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ThreeStageLeastSquares">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>An econometric method that estimates systems of simultaneous equations by combining Two-Stage Least Squares (2SLS) with seemingly unrelated regression.</skos:definition>
+        <skos:prefLabel>ThreeStageLeastSquares</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#TrimmedMean -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#TrimmedMean">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#LinearAggregations"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure of central tendency calculated by removing a specified percentage of the smallest and largest values from a dataset and then computing the mean of the remaining values.</skos:definition>
+        <skos:prefLabel>TrimmedMean</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#TukeysHonestySignificantDifferenceTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#TukeysHonestySignificantDifferenceTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A post-hoc analysis used after ANOVA to compare all possible pairs of group means and determine which differences are statistically significant.</skos:definition>
+        <skos:prefLabel>TukeysHonestySignificantDifferenceTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#TwoStageLeastSquares -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#TwoStageLeastSquares">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>An econometric method used to estimate parameters in simultaneous equations models.</skos:definition>
+        <skos:prefLabel>TwoStageLeastSquares</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#TwoWayAnalysisOfVariance -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#TwoWayAnalysisOfVariance">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>Two-Way ANOVA is a statistical technique that examines the effect of two independent factors on a continuous dependent variable.</skos:definition>
+        <skos:prefLabel>TwoWayAnalysisOfVariance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#VarianceCovarianceMatrix -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#VarianceCovarianceMatrix">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A square matrix that displays the variances of variables along the diagonal and the covariances between variables in the off-diagonal elements.</skos:definition>
+        <skos:prefLabel>VarianceCovarianceMatrix</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#WaterfallChart -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#WaterfallChart">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#Frequencies"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A type of chart that visualizes how an initial value is affected by sequential positive and negative changes.</skos:definition>
+        <skos:prefLabel>WaterfallChart</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#WilcoxonSignedRankTest -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#WilcoxonSignedRankTest">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A non-parametric test used to compare two related or paired samples to assess whether their population mean ranks differ, often as an alternative to the paired t-test when data are not normally distributed.</skos:definition>
+        <skos:prefLabel>WilcoxonSignedRankTest</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#WilksLambda -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#WilksLambda">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A statistic used in multivariate analysis (like MANOVA) to test whether group means on a combination of dependent variables are equal, with smaller values indicating greater differences between groups.</skos:definition>
+        <skos:prefLabel>WilksLambda</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ZeroCheckDecider -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ZeroCheckDecider">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/statbarnsdc#hasBooleanValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A measure that specifies if a zero check will be necessary for a TRE or any other organisation.</skos:definition>
+        <skos:prefLabel>ZeroCheckDecider</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/statbarnsdc#ZeroOrderCorrelation -->
+
+    <owl:Class rdf:about="https://www.w3id.org/statbarnsdc#ZeroOrderCorrelation">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+        <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
+        <skos:definition>A simple bivariate correlation between two variables</skos:definition>
+        <skos:prefLabel>ZeroOrderCorrelation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#CalculatedRatios"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Clusters"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#CorrelationCoefficients"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Endpoints"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Frequencies"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#GiniCoefficient"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#HazardSurvivalTables"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#LinearAggregations"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#LinkedMultilevelTables"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Mode"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#NonLinearConcentrationRatios"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Position"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Shape"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#KValue"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#MinimumDOF"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#MinimumThreshold"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#NValue"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PRatio"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfZero"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#ZeroCheckDecider"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#MinimumDoFCheck"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#MinimumThresholdCheck"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#NKCheck"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PQCheck"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#RequiredZeroCheck"/>
+            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
