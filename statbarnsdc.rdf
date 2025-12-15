@@ -28,8 +28,9 @@
         <dcterms:contributor>Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859 </dcterms:contributor>
         <dcterms:contributor>Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021</dcterms:contributor>
         <dcterms:contributor>Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534</dcterms:contributor>
-        <dcterms:contributor>Amy Tilbrook - University of Edinburg, Health Data Research UK, ORCID:0000-0002-0294-2101</dcterms:contributor>
-        <dcterms:description>Lightweight ontology for the Statbarn Framework used in Output Statistical Disclosoure Contorl (OSDC)</dcterms:description>
+        <dcterms:contributor>Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101</dcterms:contributor>
+
+        <dcterms:description>An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC).</dcterms:description>
         <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
         <dcterms:title>StatbarnSDC Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>sdc</vann:preferredNamespacePrefix>
@@ -154,20 +155,20 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRiskLevel"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/risk/owl#VeryHighRisk"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#RiskLevel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -316,32 +317,33 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#RequiredZeroCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Noise"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Suppression"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:allValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -506,26 +508,27 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Noise"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Suppression"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -563,36 +566,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#OutlierRemoval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Rounding"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#NKCheck"/>
             </owl:Restriction>
@@ -601,6 +574,27 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PQCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Noise"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#OutlierRemoval"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Rounding"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Suppression"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -895,20 +889,20 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRiskLevel"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/risk/owl#VeryHighRisk"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#RiskLevel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1179,32 +1173,28 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Rounding"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumThresholdCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Noise"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Rounding"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Suppression"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1220,38 +1210,29 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Aggregation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Noise"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#OutlierRemoval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#Suppression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumDoFCheck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Aggregation"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Noise"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#OutlierRemoval"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#Suppression"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1394,14 +1375,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumDOF"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumDOF"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1434,14 +1415,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumThreshold"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#MinimumThreshold"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1535,12 +1516,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#KValue"/>
             </owl:Restriction>
@@ -1549,6 +1524,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#NValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1670,14 +1651,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PRatio"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PRatio"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1832,14 +1813,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1889,14 +1870,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfZero"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#PresenceOfZero"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -2000,14 +1981,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ZeroCheckDecider"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#ZeroCheckDecider"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -2160,14 +2141,14 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://www.w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -2443,19 +2424,6 @@
             <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfZero"/>
             <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"/>
             <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#ZeroCheckDecider"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#MinimumDoFCheck"/>
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#MinimumThresholdCheck"/>
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#NKCheck"/>
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PQCheck"/>
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"/>
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"/>
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#RequiredZeroCheck"/>
-            <rdf:Description rdf:about="https://www.w3id.org/statbarnsdc#StatbarnDataCheck"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
