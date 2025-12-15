@@ -2,44 +2,46 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
-  } ]
-}, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#RequiredZeroCheck"
+    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck"
   } ]
 }, {
   "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#MinimumDoFCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#KValue"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#MinimumThresholdCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#MinimumDOF"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#NKCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#MinimumThreshold"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PQCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#NValue"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#PRatio"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#RequiredZeroCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZero"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck"
+      "@id" : "https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#ZeroCheckDecider"
     } ]
   } ]
 }, {
-  "@id" : "_:genid11",
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+  } ]
+}, {
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
@@ -48,34 +50,7 @@
     "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
   } ]
 }, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
-  } ]
-}, {
   "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
-  } ]
-}, {
-  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
@@ -84,61 +59,44 @@
     "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid17"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
   } ]
 }, {
   "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#OutlierRemoval"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    } ]
   } ]
 }, {
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRiskLevel"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#Likelihood"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#VeryHighRisk"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
-  } ]
-}, {
-  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
@@ -147,7 +105,7 @@
     "@id" : "https://www.w3id.org/statbarnsdc#NKCheck"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
@@ -156,58 +114,36 @@
     "@id" : "https://www.w3id.org/statbarnsdc#PQCheck"
   } ]
 }, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+  } ]
+}, {
   "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid24"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
   } ]
 }, {
   "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#OutlierRemoval"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    } ]
   } ]
 }, {
   "@id" : "_:genid29",
@@ -216,16 +152,16 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ImplicitTables"
+    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
   } ]
 }, {
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#RiskLevel"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRiskLevel"
   } ]
 }, {
   "@id" : "_:genid30",
@@ -234,46 +170,19 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
   } ]
 }, {
   "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRiskLevel"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#VeryHighRisk"
-  } ]
-}, {
-  "@id" : "_:genid33",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck"
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ]
-}, {
-  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
@@ -282,16 +191,7 @@
     "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
   } ]
 }, {
-  "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
-  } ]
-}, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
@@ -300,22 +200,58 @@
     "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#ImplicitTables"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/dpv/owl#Likelihood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#RiskLevel"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRiskLevel"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -330,22 +266,40 @@
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
   } ]
 }, {
   "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+  } ]
+}, {
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
@@ -354,67 +308,34 @@
     "@id" : "https://www.w3id.org/statbarnsdc#MinimumThresholdCheck"
   } ]
 }, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Aggregation"
-  } ]
-}, {
   "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#Likelihood"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid47"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#OutlierRemoval"
   } ]
 }, {
   "@id" : "_:genid47",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
-  } ]
-}, {
-  "@id" : "_:genid48",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#MinimumDoFCheck"
-  } ]
-}, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    } ]
   } ]
 }, {
   "@id" : "_:genid5",
@@ -426,16 +347,66 @@
     "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
   } ]
 }, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://www.w3id.org/statbarnsdc#MinimumDoFCheck"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid54"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/statbarnsdc#Aggregation"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#OutlierRemoval"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#RequiredZeroCheck"
+  } ]
+}, {
+  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
@@ -444,7 +415,16 @@
     "@id" : "https://www.w3id.org/statbarnsdc#MinimumDOF"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+  } ]
+}, {
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
@@ -453,16 +433,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
-  "@id" : "_:genid53",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
-  } ]
-}, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
@@ -471,112 +442,22 @@
     "@id" : "https://www.w3id.org/statbarnsdc#MinimumThreshold"
   } ]
 }, {
-  "@id" : "_:genid55",
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+  } ]
+}, {
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
-  } ]
-}, {
-  "@id" : "_:genid56",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
-  } ]
-}, {
-  "@id" : "_:genid57",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
-  } ]
-}, {
-  "@id" : "_:genid58",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#KValue"
-  } ]
-}, {
-  "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#NValue"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
-  } ]
-}, {
-  "@id" : "_:genid60",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ]
-}, {
-  "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
-  } ]
-}, {
-  "@id" : "_:genid62",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
-  } ]
-}, {
-  "@id" : "_:genid63",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
-  } ]
-}, {
-  "@id" : "_:genid64",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PRatio"
-  } ]
-}, {
-  "@id" : "_:genid65",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
   "@id" : "_:genid66",
@@ -585,10 +466,64 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
+    "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
   } ]
 }, {
   "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#KValue"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#NValue"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
+  } ]
+}, {
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
@@ -597,85 +532,31 @@
     "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
-  "@id" : "_:genid68",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
-  } ]
-}, {
-  "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
-  } ]
-}, {
-  "@id" : "_:genid70",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "_:genid72",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
-  } ]
-}, {
   "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZero"
+    "@id" : "https://www.w3id.org/statbarnsdc#PRatio"
   } ]
 }, {
   "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ZeroCheckDecider"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
   "@id" : "_:genid76",
@@ -684,16 +565,16 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
   } ]
 }, {
   "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid78",
@@ -702,34 +583,34 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"
+    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"
   } ]
 }, {
   "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+  } ]
+}, {
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
-  } ]
-}, {
-  "@id" : "_:genid80",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
   } ]
 }, {
   "@id" : "_:genid81",
@@ -742,6 +623,106 @@
   } ]
 }, {
   "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZero"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#ZeroCheckDecider"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    }, {
+      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -775,43 +756,10 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#KValue"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#MinimumDOF"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#MinimumThreshold"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#NValue"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PRatio"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZero"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"
-    }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#ZeroCheckDecider"
-    } ]
-  } ]
-}, {
   "@id" : "https://www.w3id.org/statbarnsdc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Amy Tilbrook - University of Edinburg, Health Data Research UK, ORCID:0000-0002-0294-2101"
+    "@value" : "Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101"
   }, {
     "@value" : "Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534"
   }, {
@@ -823,7 +771,7 @@
     "@value" : "Trupti Padiya - University of the West of England (UWE Bristol), ORCID:0000-0003-4514-4473 "
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Lightweight ontology for the Statbarn Framework used in Output Statistical Disclosoure Contorl (OSDC)"
+    "@value" : "An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC)."
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://opensource.org/licenses/MIT"
@@ -1140,9 +1088,7 @@
   }, {
     "@id" : "_:genid8"
   }, {
-    "@id" : "_:genid9"
-  }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid12"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The risk that released statistical outputs allow an attacker to infer details about an individual, as a result of their membership of a sensitive category or class who all share the same values  for some variables."
@@ -1279,7 +1225,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid11"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Correlation coefficients are statistical measures that quantify the relationship between two or more variables. This includes measures such as regression estimates, as well as single statistics such as Pearson's r, Spearmans's rank correlation coefficient (ρ) and Kendall's rank correlation coefficient (τ)."
@@ -1356,13 +1302,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
   }, {
-    "@id" : "_:genid12"
-  }, {
-    "@id" : "_:genid13"
-  }, {
     "@id" : "_:genid14"
   }, {
     "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A risk that combining multiple outputs allows to deduce sensitive information about individuals by analyzing changes or differences between them."
@@ -1409,19 +1353,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
   }, {
-    "@id" : "_:genid16"
-  }, {
-    "@id" : "_:genid17"
-  }, {
-    "@id" : "_:genid18"
-  }, {
-    "@id" : "_:genid19"
-  }, {
     "@id" : "_:genid20"
   }, {
     "@id" : "_:genid21"
   }, {
     "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The risk that a small number of individuals contribute a disproportionately large share of a cells value, making it easier to identify or infer their data."
@@ -1453,9 +1391,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid23"
+    "@id" : "_:genid29"
   }, {
-    "@id" : "_:genid24"
+    "@id" : "_:genid30"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Minimum and maximum values for a variable."
@@ -1517,11 +1455,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid25"
+    "@id" : "_:genid31"
   }, {
-    "@id" : "_:genid26"
+    "@id" : "_:genid32"
   }, {
-    "@id" : "_:genid27"
+    "@id" : "_:genid33"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "This class covers frequencies ie counts of things, either in tables (most common), in certain graphs such as histograms or bar charts, or single as in a description of the number of survey participants. This also includes frequencies expressed as a proportion of some total."
@@ -1583,7 +1521,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid34"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The Gini coefficient is used to summarise inequality within a population. The Lorenz curve is its graphical counterpart."
@@ -1630,9 +1568,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid35"
   }, {
-    "@id" : "_:genid30"
+    "@id" : "_:genid36"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "These are tables used to analyse and model survival or failure times in event-based data and business data. Commonly seen in epidemiology, actuarial science and clinical research among others. These can also underpin visualisations such as Kaplen-Meier."
@@ -1769,11 +1707,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid37"
   }, {
-    "@id" : "_:genid32"
+    "@id" : "_:genid38"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid39"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A risk of tables or outputs that allow sensitive information to be inferred indirectly through calculations or combinations of published data."
@@ -1820,7 +1758,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid34"
+    "@id" : "_:genid40"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A threshold parameter used in the NK disclosure risk test to determine whether a small number of records dominate a cell’s contribution, indicating potential disclosure risk."
@@ -2002,11 +1940,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid35"
+    "@id" : "_:genid41"
   }, {
-    "@id" : "_:genid36"
+    "@id" : "_:genid42"
   }, {
-    "@id" : "_:genid37"
+    "@id" : "_:genid43"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "This class covers sums, means, ratios etc.  These are stats that provide a snapshot of the data's characteristics that don't relate to any one data point and instead are calculated with many or all of the points in a data set. This class also includes linear concentration ratios (eg share of the top N observations)."
@@ -2113,15 +2051,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
   }, {
-    "@id" : "_:genid38"
+    "@id" : "_:genid44"
   }, {
-    "@id" : "_:genid39"
+    "@id" : "_:genid45"
   }, {
-    "@id" : "_:genid40"
-  }, {
-    "@id" : "_:genid41"
-  }, {
-    "@id" : "_:genid42"
+    "@id" : "_:genid46"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The disclosure risk that arises when cells in a table have very few observations, making it easier to identify or infer information about the individuals contributing to those cells."
@@ -2138,17 +2072,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
   }, {
-    "@id" : "_:genid43"
+    "@id" : "_:genid51"
   }, {
-    "@id" : "_:genid44"
+    "@id" : "_:genid52"
   }, {
-    "@id" : "_:genid45"
-  }, {
-    "@id" : "_:genid46"
-  }, {
-    "@id" : "_:genid47"
-  }, {
-    "@id" : "_:genid48"
+    "@id" : "_:genid53"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The risk that statistical outputs are based on very few independent pieces of information make it easier to deduce individual data or sensitive values."
@@ -2315,7 +2243,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid49"
+    "@id" : "_:genid59"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The lowest acceptable number of 'residual degrees of freedom'  required for a statistical output to be considered safe from disclosure risk. Calculated as the number of independent data points minus the number of learned paramters in a model."
@@ -2332,9 +2260,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid50"
+    "@id" : "_:genid60"
   }, {
-    "@id" : "_:genid51"
+    "@id" : "_:genid61"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "To check model's residual degrees of Freedom (DoF) meets  or exceeds the specified value of MinimumDoF."
@@ -2351,7 +2279,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid52"
+    "@id" : "_:genid62"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The smallest allowable value or count for a data cell or statistic to be safely released without risking disclosure of individual information."
@@ -2368,9 +2296,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid53"
+    "@id" : "_:genid63"
   }, {
-    "@id" : "_:genid54"
+    "@id" : "_:genid64"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "To check the sizes if subgroups (e.g. table cells) meet or exceed the specified value of MinimumThreshold."
@@ -2387,9 +2315,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid55"
+    "@id" : "_:genid65"
   }, {
-    "@id" : "_:genid56"
+    "@id" : "_:genid66"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The value or values that occur most frequently in a dataset. It represents the peak or highest point on a distribution's histogram."
@@ -2481,11 +2409,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid57"
+    "@id" : "_:genid67"
   }, {
-    "@id" : "_:genid58"
+    "@id" : "_:genid68"
   }, {
-    "@id" : "_:genid59"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "NK test utilises the value specified as Nvalue and Kvalue."
@@ -2502,7 +2430,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid60"
+    "@id" : "_:genid70"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A threshold specifying the minimum number of observations required in a cell or output to ensure it meets disclosure control criteria."
@@ -2549,9 +2477,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid61"
+    "@id" : "_:genid71"
   }, {
-    "@id" : "_:genid62"
+    "@id" : "_:genid72"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Non-linear concentration ratios are statistical measures used to assess degree of concentration or dispersion. The most common of these are the Herfindahl–Hirschman index."
@@ -2628,9 +2556,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid63"
+    "@id" : "_:genid73"
   }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid74"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "PQ test utilises the value specified as PRatio"
@@ -2647,7 +2575,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid65"
+    "@id" : "_:genid75"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure used to assess the proportion of a cell’s value contributed by a single or small group of individuals, indicating potential dominance and disclosure risk."
@@ -2799,9 +2727,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid66"
+    "@id" : "_:genid76"
   }, {
-    "@id" : "_:genid67"
+    "@id" : "_:genid77"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Position refers to a statistic that provides information on a central or typical value in a dataset. These include data points such as median, percentiles, or inter-quartile range."
@@ -2818,9 +2746,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid68"
+    "@id" : "_:genid78"
   }, {
-    "@id" : "_:genid69"
+    "@id" : "_:genid79"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "To check for presence of linked tables and utilises value from PresenceOfLinkedTables. This will typically be a manual process"
@@ -2837,7 +2765,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid70"
+    "@id" : "_:genid80"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure specifying if there is a possibility that sensitive information can be inferred by combining multiple related tables, even if each table alone does not disclose individual data."
@@ -2854,7 +2782,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid71"
+    "@id" : "_:genid81"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A mesure specifying there are cells with a value of zero, which can reveal information about the absence of certain individuals or events."
@@ -2871,9 +2799,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid72"
+    "@id" : "_:genid82"
   }, {
-    "@id" : "_:genid73"
+    "@id" : "_:genid83"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "To check for presence of zeros and utilises value from PresenceOfZero."
@@ -3010,9 +2938,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid74"
+    "@id" : "_:genid84"
   }, {
-    "@id" : "_:genid75"
+    "@id" : "_:genid85"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Indicates if a zerocheck is required and utilises the value from ZeroCheckDecider."
@@ -3089,7 +3017,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid76"
+    "@id" : "_:genid86"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Shape outputs refer to measures that describe or show the characteristics of data distributions. They provide information on elements such as symmetry, peaks and tail behaviour. These comprise standard deviation, skewness, and kurtosis."
@@ -3208,9 +3136,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
   }, {
-    "@id" : "_:genid77"
+    "@id" : "_:genid87"
   }, {
-    "@id" : "_:genid78"
+    "@id" : "_:genid88"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : " To check whether the data related to statbarn is disclosive and utilises value from StatbarnRelevantShowData."
@@ -3227,7 +3155,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid79"
+    "@id" : "_:genid89"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure specifying there is relevant data or information that could be disclosive relevant to the statbarn."
@@ -3244,7 +3172,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
   }, {
-    "@id" : "_:genid80"
+    "@id" : "_:genid90"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical tests are used to make inferences and observe differences in data. These involve a wide range of tests including t-tests, p-values, F-tests, or confidence intervals."
@@ -3486,7 +3414,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
   }, {
-    "@id" : "_:genid81"
+    "@id" : "_:genid91"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure that specifies if a zero check will be necessary for a TRE or any other organisation."
