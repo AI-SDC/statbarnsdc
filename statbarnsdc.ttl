@@ -20,10 +20,11 @@
                                     owl:imports <https://w3id.org/dpv/2.2/owl#> ,
                                                 <https://w3id.org/dpv/2.2/risk/owl#> ;
                                     dcterms:creator "Trupti Padiya - University of the West of England (UWE Bristol), ORCID:0000-0003-4514-4473 " ;
-									dcterms:contributor "Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859" , "Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021",
-									"Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534",
-									"Amy Tilbrook - University of Edinburg, Health Data Research UK, ORCID:0000-0002-0294-2101" ;
-                                    dcterms:description "Lightweight ontology for the Statbarn Framework used in Output Statistical Disclosoure Contorl (OSDC)" ;
+                                    dcterms:contributor "Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859 " ,
+                                                        "Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021" ,
+                                                        "Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534" ,
+                                                        "Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101" ;
+                                    dcterms:description "An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC)." ;
                                     dcterms:license <https://opensource.org/licenses/MIT> ;
                                     dcterms:title "StatbarnSDC Ontology" ;
                                     vann:preferredNamespacePrefix "sdc" ;
@@ -105,16 +106,16 @@
 :AuxiliaryInformation rdf:type owl:Class ;
                       rdfs:subClassOf dpv-owl:Risk ,
                                       [ rdf:type owl:Restriction ;
+                                        owl:onProperty risk-owl:hasRiskEvaluation ;
+                                        owl:someValuesFrom :StatbarnDataCheck
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
                                         owl:onProperty dpv-owl:hasLikelihood ;
-                                        owl:someValuesFrom dpv-owl:Likelihood
+                                        owl:allValuesFrom dpv-owl:Likelihood
                                       ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty dpv-owl:hasRiskLevel ;
-                                        owl:someValuesFrom risk-owl:VeryHighRisk
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty risk-owl:hasRiskEvaluation ;
-                                        owl:someValuesFrom :StatbarnDataCheck
+                                        owl:allValuesFrom dpv-owl:RiskLevel
                                       ] ;
                       rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                       skos:definition "The risk that external data, when combined with published statistical outputs, will allow inferences or identification of individuals, increasing disclosure risk beyond what the output alone suggests." ;
@@ -221,24 +222,24 @@
 :ClassDisclosure rdf:type owl:Class ;
                  rdfs:subClassOf dpv-owl:Risk ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty dpv-owl:hasLikelihood ;
-                                   owl:someValuesFrom dpv-owl:Likelihood
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                                   owl:someValuesFrom :Noise
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                                   owl:someValuesFrom :Suppression
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty risk-owl:hasRiskEvaluation ;
-                                   owl:someValuesFrom :PresenceOfZeroCheck
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty risk-owl:hasRiskEvaluation ;
                                    owl:someValuesFrom :RequiredZeroCheck
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty dpv-owl:hasLikelihood ;
+                                   owl:allValuesFrom dpv-owl:Likelihood
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty dpv-owl:isMitigatedByMeasure ;
+                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :Noise
+                                                                     :Suppression
+                                                                   )
+                                                     ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty risk-owl:hasRiskEvaluation ;
+                                   owl:allValuesFrom :PresenceOfZeroCheck
                                  ] ;
                  rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                  skos:definition "The risk that released statistical outputs allow an attacker to infer details about an individual, as a result of their membership of a sensitive category or class who all share the same values  for some variables." ;
@@ -357,20 +358,20 @@
 :Differencing rdf:type owl:Class ;
               rdfs:subClassOf dpv-owl:Risk ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty dpv-owl:hasLikelihood ;
-                                owl:someValuesFrom dpv-owl:Likelihood
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                                owl:someValuesFrom :Noise
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                                owl:someValuesFrom :Suppression
-                              ] ,
-                              [ rdf:type owl:Restriction ;
                                 owl:onProperty risk-owl:hasRiskEvaluation ;
                                 owl:someValuesFrom :PresenceOfLinkedTableCheck
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty dpv-owl:hasLikelihood ;
+                                owl:allValuesFrom dpv-owl:Likelihood
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty dpv-owl:isMitigatedByMeasure ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :Noise
+                                                                  :Suppression
+                                                                )
+                                                  ]
                               ] ;
               rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
               skos:definition "A risk that combining multiple outputs allows to deduce sensitive information about individuals by analyzing changes or differences between them." ;
@@ -397,32 +398,26 @@
 :Dominance rdf:type owl:Class ;
            rdfs:subClassOf dpv-owl:Risk ,
                            [ rdf:type owl:Restriction ;
-                             owl:onProperty dpv-owl:hasLikelihood ;
-                             owl:someValuesFrom dpv-owl:Likelihood
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                             owl:someValuesFrom :Noise
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                             owl:someValuesFrom :OutlierRemoval
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                             owl:someValuesFrom :Rounding
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                             owl:someValuesFrom :Suppression
-                           ] ,
-                           [ rdf:type owl:Restriction ;
                              owl:onProperty risk-owl:hasRiskEvaluation ;
                              owl:someValuesFrom :NKCheck
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty risk-owl:hasRiskEvaluation ;
                              owl:someValuesFrom :PQCheck
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dpv-owl:hasLikelihood ;
+                             owl:allValuesFrom dpv-owl:Likelihood
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dpv-owl:isMitigatedByMeasure ;
+                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                 owl:unionOf ( :Noise
+                                                               :OutlierRemoval
+                                                               :Rounding
+                                                               :Suppression
+                                                             )
+                                               ]
                            ] ;
            rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
            skos:definition "The risk that a small number of individuals contribute a disproportionately large share of a cells value, making it easier to identify or infer their data." ;
@@ -633,16 +628,16 @@
 :ImplicitTables rdf:type owl:Class ;
                 rdfs:subClassOf dpv-owl:Risk ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty risk-owl:hasRiskEvaluation ;
+                                  owl:someValuesFrom :StatbarnDataCheck
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty dpv-owl:hasLikelihood ;
-                                  owl:someValuesFrom dpv-owl:Likelihood
+                                  owl:allValuesFrom dpv-owl:Likelihood
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty dpv-owl:hasRiskLevel ;
-                                  owl:someValuesFrom risk-owl:VeryHighRisk
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty risk-owl:hasRiskEvaluation ;
-                                  owl:someValuesFrom :StatbarnDataCheck
+                                  owl:allValuesFrom dpv-owl:RiskLevel
                                 ] ;
                 rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                 skos:definition "A risk of tables or outputs that allow sensitive information to be inferred indirectly through calculations or combinations of published data." ;
@@ -837,24 +832,21 @@
 :LowCount rdf:type owl:Class ;
           rdfs:subClassOf dpv-owl:Risk ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty dpv-owl:hasLikelihood ;
-                            owl:someValuesFrom dpv-owl:Likelihood
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                            owl:someValuesFrom :Noise
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                            owl:someValuesFrom :Rounding
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                            owl:someValuesFrom :Suppression
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty risk-owl:hasRiskEvaluation ;
                             owl:someValuesFrom :MinimumThresholdCheck
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty dpv-owl:hasLikelihood ;
+                            owl:allValuesFrom dpv-owl:Likelihood
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty dpv-owl:isMitigatedByMeasure ;
+                            owl:allValuesFrom [ rdf:type owl:Class ;
+                                                owl:unionOf ( :Noise
+                                                              :Rounding
+                                                              :Suppression
+                                                            )
+                                              ]
                           ] ;
           rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
           skos:definition "The disclosure risk that arises when cells in a table have very few observations, making it easier to identify or infer information about the individuals contributing to those cells." ;
@@ -865,28 +857,22 @@
 :LowDOF rdf:type owl:Class ;
         rdfs:subClassOf dpv-owl:Risk ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty dpv-owl:hasLikelihood ;
-                          owl:someValuesFrom dpv-owl:Likelihood
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                          owl:someValuesFrom :Aggregation
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                          owl:someValuesFrom :Noise
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                          owl:someValuesFrom :OutlierRemoval
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty dpv-owl:isMitigatedByMeasure ;
-                          owl:someValuesFrom :Suppression
-                        ] ,
-                        [ rdf:type owl:Restriction ;
                           owl:onProperty risk-owl:hasRiskEvaluation ;
                           owl:someValuesFrom :MinimumDoFCheck
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty dpv-owl:hasLikelihood ;
+                          owl:allValuesFrom dpv-owl:Likelihood
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty dpv-owl:isMitigatedByMeasure ;
+                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( :Aggregation
+                                                            :Noise
+                                                            :OutlierRemoval
+                                                            :Suppression
+                                                          )
+                                            ]
                         ] ;
         rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
         skos:definition "The risk that statistical outputs are based on very few independent pieces of information make it easier to deduce individual data or sensitive values." ;
@@ -989,12 +975,12 @@
 :MinimumDoFCheck rdf:type owl:Class ;
                  rdfs:subClassOf risk-owl:RiskEvaluation ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty dpv-owl:hasHumanInvolvement ;
-                                   owl:someValuesFrom dpv-owl:HumanInvolvement
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty risk-owl:hasRiskCriteria ;
                                    owl:someValuesFrom :MinimumDOF
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty dpv-owl:hasHumanInvolvement ;
+                                   owl:allValuesFrom dpv-owl:HumanInvolvement
                                  ] ;
                  rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                  skos:definition "To check model's residual degrees of Freedom (DoF) meets  or exceeds the specified value of MinimumDoF." ;
@@ -1017,12 +1003,12 @@
 :MinimumThresholdCheck rdf:type owl:Class ;
                        rdfs:subClassOf risk-owl:RiskEvaluation ,
                                        [ rdf:type owl:Restriction ;
-                                         owl:onProperty dpv-owl:hasHumanInvolvement ;
-                                         owl:someValuesFrom dpv-owl:HumanInvolvement
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
                                          owl:onProperty risk-owl:hasRiskCriteria ;
                                          owl:someValuesFrom :MinimumThreshold
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty dpv-owl:hasHumanInvolvement ;
+                                         owl:allValuesFrom dpv-owl:HumanInvolvement
                                        ] ;
                        rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                        skos:definition "To check the sizes if subgroups (e.g. table cells) meet or exceed the specified value of MinimumThreshold." ;
@@ -1089,16 +1075,16 @@
 :NKCheck rdf:type owl:Class ;
          rdfs:subClassOf risk-owl:RiskEvaluation ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty dpv-owl:hasHumanInvolvement ;
-                           owl:someValuesFrom dpv-owl:HumanInvolvement
-                         ] ,
-                         [ rdf:type owl:Restriction ;
                            owl:onProperty risk-owl:hasRiskCriteria ;
                            owl:someValuesFrom :KValue
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty risk-owl:hasRiskCriteria ;
                            owl:someValuesFrom :NValue
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dpv-owl:hasHumanInvolvement ;
+                           owl:allValuesFrom dpv-owl:HumanInvolvement
                          ] ;
          rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
          skos:definition "NK test utilises the value specified as Nvalue and Kvalue." ;
@@ -1185,12 +1171,12 @@
 :PQCheck rdf:type owl:Class ;
          rdfs:subClassOf risk-owl:RiskEvaluation ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty dpv-owl:hasHumanInvolvement ;
-                           owl:someValuesFrom dpv-owl:HumanInvolvement
-                         ] ,
-                         [ rdf:type owl:Restriction ;
                            owl:onProperty risk-owl:hasRiskCriteria ;
                            owl:someValuesFrom :PRatio
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dpv-owl:hasHumanInvolvement ;
+                           owl:allValuesFrom dpv-owl:HumanInvolvement
                          ] ;
          rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
          skos:definition "PQ test utilises the value specified as PRatio" ;
@@ -1301,12 +1287,12 @@
 :PresenceOfLinkedTableCheck rdf:type owl:Class ;
                             rdfs:subClassOf risk-owl:RiskEvaluation ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty dpv-owl:hasHumanInvolvement ;
-                                              owl:someValuesFrom dpv-owl:HumanInvolvement
-                                            ] ,
-                                            [ rdf:type owl:Restriction ;
                                               owl:onProperty risk-owl:hasRiskCriteria ;
                                               owl:someValuesFrom :PresenceOfLinkedTables
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty dpv-owl:hasHumanInvolvement ;
+                                              owl:allValuesFrom dpv-owl:HumanInvolvement
                                             ] ;
                             rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                             skos:definition "To check for presence of linked tables and utilises value from PresenceOfLinkedTables. This will typically be a manual process" ;
@@ -1341,12 +1327,12 @@
 :PresenceOfZeroCheck rdf:type owl:Class ;
                      rdfs:subClassOf risk-owl:RiskEvaluation ,
                                      [ rdf:type owl:Restriction ;
-                                       owl:onProperty dpv-owl:hasHumanInvolvement ;
-                                       owl:someValuesFrom dpv-owl:HumanInvolvement
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
                                        owl:onProperty risk-owl:hasRiskCriteria ;
                                        owl:someValuesFrom :PresenceOfZero
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty dpv-owl:hasHumanInvolvement ;
+                                       owl:allValuesFrom dpv-owl:HumanInvolvement
                                      ] ;
                      rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                      skos:definition "To check for presence of zeros and utilises value from PresenceOfZero." ;
@@ -1421,12 +1407,12 @@
 :RequiredZeroCheck rdf:type owl:Class ;
                    rdfs:subClassOf risk-owl:RiskEvaluation ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty dpv-owl:hasHumanInvolvement ;
-                                     owl:someValuesFrom dpv-owl:HumanInvolvement
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty risk-owl:hasRiskCriteria ;
                                      owl:someValuesFrom :ZeroCheckDecider
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty dpv-owl:hasHumanInvolvement ;
+                                     owl:allValuesFrom dpv-owl:HumanInvolvement
                                    ] ;
                    rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                    skos:definition "Indicates if a zerocheck is required and utilises the value from ZeroCheckDecider." ;
@@ -1536,12 +1522,12 @@
 :StatbarnDataCheck rdf:type owl:Class ;
                    rdfs:subClassOf risk-owl:RiskEvaluation ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty dpv-owl:hasHumanInvolvement ;
-                                     owl:someValuesFrom dpv-owl:HumanInvolvement
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty risk-owl:hasRiskCriteria ;
                                      owl:someValuesFrom :StatbarnRelevantShowData
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty dpv-owl:hasHumanInvolvement ;
+                                     owl:allValuesFrom dpv-owl:HumanInvolvement
                                    ] ;
                    rdfs:isDefinedBy "https://www.w3id.org/statbarnsdc" ;
                    skos:definition " To check whether the data related to statbarn is disclosive and utilises value from StatbarnRelevantShowData." ;
@@ -1745,19 +1731,6 @@
                 :PresenceOfZero
                 :StatbarnRelevantShowData
                 :ZeroCheckDecider
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :MinimumDoFCheck
-                :MinimumThresholdCheck
-                :NKCheck
-                :PQCheck
-                :PresenceOfLinkedTableCheck
-                :PresenceOfZeroCheck
-                :RequiredZeroCheck
-                :StatbarnDataCheck
               )
 ] .
 
