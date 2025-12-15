@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -298,7 +299,7 @@ td {
         "@value": "Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534"
       },
       {
-        "@value": "Amy Tilbrook - University of Edinburg, Health Data Research UK, ORCID:0000-0002-0294-2101"
+        "@value": "Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101"
       }
     ],
     "https://schema.org/creator": [
@@ -308,7 +309,7 @@ td {
     ],
     "https://schema.org/description": [
       {
-        "@value": "Lightweight ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC)"
+        "@value": "An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC)."
       }
     ],
     "https://schema.org/license": [
@@ -396,10 +397,11 @@ td {
             <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
             </dt>
-            <dd><p>Lightweight ontology for the Statbarn Framework used in Output Statistical Disclosoure Control (OSDC)</p></dd>
+            <dd><p>An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC).</p></dd>
           </div>
-          <div>
-              <dt>Download the Ontology</dt>
+        </dl>
+      </div>
+      <dt>Download the Ontology</dt>
             <dd>
               <ul>
               <li><p><a href="statbarnsdc.ttl">In Turtle (.ttl) format</a></p></li>
@@ -407,9 +409,6 @@ td {
               <li><p><a href="statbarnsdc.jsonld">In JSON-LD (.jsonld) format</a></p></li>
               </ul>
           </dd>
-          </div>
-        </dl>
-      </div>
       <div class="section" id="classes">
         <h2>Classes</h2>
         <div class="property entity" id="AdditiveNoise">
@@ -712,9 +711,25 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
                           <span class="cardinality">some</span>
+                          <span>
+                            <span>
+                              <a href="#StatbarnDataCheck">StatbarnDataCheck</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
                               <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
@@ -730,26 +745,10 @@ td {
                       <span>
                         <a href="https://w3id.org/dpv/owl#hasRiskLevel">dpv-owl:hasRiskLevel</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/risk/owl#VeryHighRisk">risk-owl:VeryHighRisk</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#StatbarnDataCheck">StatbarnDataCheck</a>
+                              <a href="https://w3id.org/dpv/owl#RiskLevel">dpv-owl:RiskLevel</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -1290,9 +1289,25 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
                           <span class="cardinality">some</span>
+                          <span>
+                            <span>
+                              <a href="#RequiredZeroCheck">RequiredZeroCheck</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
                               <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
@@ -1308,26 +1323,10 @@ td {
                       <span>
                         <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#Noise">Noise</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Suppression">Suppression</a>
+                              <a href="#Noise">Noise</a> OR <a href="#Suppression">Suppression</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -1340,26 +1339,10 @@ td {
                       <span>
                         <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
                               <a href="#PresenceOfZeroCheck">PresenceOfZeroCheck</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#RequiredZeroCheck">RequiredZeroCheck</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -2106,9 +2089,25 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
                           <span class="cardinality">some</span>
+                          <span>
+                            <span>
+                              <a href="#PresenceOfLinkedTableCheck">PresenceOfLinkedTableCheck</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
                               <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
@@ -2124,42 +2123,10 @@ td {
                       <span>
                         <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#Noise">Noise</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Suppression">Suppression</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#PresenceOfLinkedTableCheck">PresenceOfLinkedTableCheck</a>
+                               <a href="#Noise">Noise</a> OR <a href="#Suppression">Suppression</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -2290,86 +2257,6 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Noise">Noise</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#OutlierRemoval">OutlierRemoval</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Rounding">Rounding</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Suppression">Suppression</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
                         <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
                           <span class="cardinality">some</span>
@@ -2392,6 +2279,38 @@ td {
                           <span>
                             <span>
                               <a href="#PQCheck">PQCheck</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <span>
+                          <span class="cardinality">only</span>
+                          <span>
+                            <span>
+                              <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
+                        <span>
+                          <span class="cardinality">only</span>
+                          <span>
+                            <span>
+                             <a href="#Noise">Noise</a> OR <a href="#OutlierRemoval">OutlierRemoval</a> OR <a href="#Rounding">Rounding</a> OR <a href="#Suppression">Suppression</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -3562,9 +3481,25 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
                           <span class="cardinality">some</span>
+                          <span>
+                            <span>
+                              <a href="#StatbarnDataCheck">StatbarnDataCheck</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
                               <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
@@ -3580,26 +3515,10 @@ td {
                       <span>
                         <a href="https://w3id.org/dpv/owl#hasRiskLevel">dpv-owl:hasRiskLevel</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/risk/owl#VeryHighRisk">risk-owl:VeryHighRisk</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#StatbarnDataCheck">StatbarnDataCheck</a>
+                              <a href="https://w3id.org/dpv/owl#RiskLevel">dpv-owl:RiskLevel</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -4575,9 +4494,25 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
                           <span class="cardinality">some</span>
+                          <span>
+                            <span>
+                              <a href="#MinimumThresholdCheck">MinimumThresholdCheck</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
                               <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
@@ -4593,58 +4528,10 @@ td {
                       <span>
                         <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#Noise">Noise</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Rounding">Rounding</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Suppression">Suppression</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#MinimumThresholdCheck">MinimumThresholdCheck</a>
+                              <a href="#Noise">Noise</a> OR  <a href="#Rounding">Rounding</a> OR <a href="#Suppression">Suppression</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -4699,9 +4586,25 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
                         <span>
                           <span class="cardinality">some</span>
+                          <span>
+                            <span>
+                              <a href="#MinimumDoFCheck">MinimumDoFCheck</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasLikelihood">dpv-owl:hasLikelihood</a>
+                        <span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
                               <a href="https://w3id.org/dpv/owl#Likelihood">dpv-owl:Likelihood</a>
@@ -4717,74 +4620,10 @@ td {
                       <span>
                         <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#Aggregation">Aggregation</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Noise">Noise</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#OutlierRemoval">OutlierRemoval</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/owl#isMitigatedByMeasure">dpv-owl:isMitigatedByMeasure</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#Suppression">Suppression</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskEvaluation">risk-owl:hasRiskEvaluation</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="#MinimumDoFCheck">MinimumDoFCheck</a>
+                              <a href="#Aggregation">Aggregation</a> OR  <a href="#Noise">Noise</a> OR <a href="#OutlierRemoval">OutlierRemoval</a> OR <a href="#Suppression">Suppression</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -5278,12 +5117,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
+                              <a href="#MinimumDOF">MinimumDOF</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -5294,12 +5133,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#MinimumDOF">MinimumDOF</a>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -5413,12 +5252,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
+                              <a href="#MinimumThreshold">MinimumThreshold</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -5429,12 +5268,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#MinimumThreshold">MinimumThreshold</a>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -5758,22 +5597,6 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
-                        <span>
-                          <span class="cardinality">some</span>
-                          <span>
-                            <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
-                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                            </span>
-                          </span>
-                        </span><br>
-                      </span>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <span>
                         <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
@@ -5796,6 +5619,22 @@ td {
                           <span>
                             <span>
                               <a href="#NValue">NValue</a>
+                              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                            </span>
+                          </span>
+                        </span><br>
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <span>
+                          <span class="cardinality">only</span>
+                          <span>
+                            <span>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -6248,12 +6087,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
+                              <a href="#PRatio">PRatio</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -6264,12 +6103,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#PRatio">PRatio</a>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -6837,12 +6676,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
+                              <a href="#PresenceOfLinkedTables">PresenceOfLinkedTables</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -6853,12 +6692,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#PresenceOfLinkedTables">PresenceOfLinkedTables</a>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -7031,12 +6870,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
+                              <a href="#PresenceOfZero">PresenceOfZero</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -7047,12 +6886,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#PresenceOfZero">PresenceOfZero</a>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -7411,12 +7250,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
+                              <a href="#ZeroCheckDecider">ZeroCheckDecider</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -7427,12 +7266,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#ZeroCheckDecider">ZeroCheckDecider</a>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -8103,12 +7942,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
+                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
                         <span>
                           <span class="cardinality">some</span>
                           <span>
                             <span>
-                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
+                              <a href="#StatbarnRelevantShowData">StatbarnRelevantShowData</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -8119,12 +7958,12 @@ td {
                   <li>
                     <span>
                       <span>
-                        <a href="https://w3id.org/dpv/risk/owl#hasRiskCriteria">risk-owl:hasRiskCriteria</a>
+                        <a href="https://w3id.org/dpv/owl#hasHumanInvolvement">dpv-owl:hasHumanInvolvement</a>
                         <span>
-                          <span class="cardinality">some</span>
+                          <span class="cardinality">only</span>
                           <span>
                             <span>
-                              <a href="#StatbarnRelevantShowData">StatbarnRelevantShowData</a>
+                              <a href="https://w3id.org/dpv/owl#HumanInvolvement">dpv-owl:HumanInvolvement</a>
                               <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                             </span>
                           </span>
@@ -9945,6 +9784,4 @@ td {
       </ul>
     </div>
   </body>
-
 </html>
-
