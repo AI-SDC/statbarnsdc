@@ -5,37 +5,37 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck"
+    "@id" : "https://w3id.org/statbarnsdc#StatbarnDataCheck"
   } ]
 }, {
   "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#KValue"
+      "@id" : "https://w3id.org/statbarnsdc#KValue"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#MinimumDOF"
+      "@id" : "https://w3id.org/statbarnsdc#MinimumDOF"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#MinimumThreshold"
+      "@id" : "https://w3id.org/statbarnsdc#MinimumThreshold"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#NValue"
+      "@id" : "https://w3id.org/statbarnsdc#NValue"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PRatio"
+      "@id" : "https://w3id.org/statbarnsdc#PRatio"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"
+      "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTables"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZero"
+      "@id" : "https://w3id.org/statbarnsdc#PresenceOfZero"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"
+      "@id" : "https://w3id.org/statbarnsdc#StatbarnRelevantShowData"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#ZeroCheckDecider"
+      "@id" : "https://w3id.org/statbarnsdc#ZeroCheckDecider"
     } ]
   } ]
 }, {
   "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck"
+    "@id" : "https://w3id.org/statbarnsdc#PresenceOfZeroCheck"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
@@ -47,7 +47,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+    "@id" : "https://w3id.org/statbarnsdc#LowDOF"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -56,7 +56,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"
+    "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"
   } ]
 }, {
   "@id" : "_:genid15",
@@ -81,9 +81,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+      "@id" : "https://w3id.org/statbarnsdc#Noise"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+      "@id" : "https://w3id.org/statbarnsdc#Suppression"
     } ]
   } ]
 }, {
@@ -102,7 +102,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#NKCheck"
+    "@id" : "https://w3id.org/statbarnsdc#NKCheck"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -111,7 +111,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PQCheck"
+    "@id" : "https://w3id.org/statbarnsdc#PQCheck"
   } ]
 }, {
   "@id" : "_:genid22",
@@ -136,13 +136,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+      "@id" : "https://w3id.org/statbarnsdc#Noise"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#OutlierRemoval"
+      "@id" : "https://w3id.org/statbarnsdc#OutlierRemoval"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+      "@id" : "https://w3id.org/statbarnsdc#Rounding"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+      "@id" : "https://w3id.org/statbarnsdc#Suppression"
     } ]
   } ]
 }, {
@@ -152,7 +152,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
+    "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -170,7 +170,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+    "@id" : "https://w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid31",
@@ -179,7 +179,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
+    "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
   } ]
 }, {
   "@id" : "_:genid32",
@@ -188,7 +188,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
+    "@id" : "https://w3id.org/statbarnsdc#Differencing"
   } ]
 }, {
   "@id" : "_:genid33",
@@ -197,7 +197,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+    "@id" : "https://w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid34",
@@ -206,7 +206,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+    "@id" : "https://w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid35",
@@ -215,7 +215,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ImplicitTables"
+    "@id" : "https://w3id.org/statbarnsdc#ImplicitTables"
   } ]
 }, {
   "@id" : "_:genid36",
@@ -224,7 +224,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+    "@id" : "https://w3id.org/statbarnsdc#LowDOF"
   } ]
 }, {
   "@id" : "_:genid37",
@@ -233,7 +233,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck"
+    "@id" : "https://w3id.org/statbarnsdc#StatbarnDataCheck"
   } ]
 }, {
   "@id" : "_:genid38",
@@ -260,13 +260,13 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#AuxiliaryInformation"
+    "@id" : "https://w3id.org/statbarnsdc#AuxiliaryInformation"
   } ]
 }, {
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasDecimalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -278,7 +278,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
+    "@id" : "https://w3id.org/statbarnsdc#Differencing"
   } ]
 }, {
   "@id" : "_:genid42",
@@ -287,7 +287,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
+    "@id" : "https://w3id.org/statbarnsdc#Dominance"
   } ]
 }, {
   "@id" : "_:genid43",
@@ -296,7 +296,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+    "@id" : "https://w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid44",
@@ -305,7 +305,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#MinimumThresholdCheck"
+    "@id" : "https://w3id.org/statbarnsdc#MinimumThresholdCheck"
   } ]
 }, {
   "@id" : "_:genid45",
@@ -330,11 +330,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+      "@id" : "https://w3id.org/statbarnsdc#Noise"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+      "@id" : "https://w3id.org/statbarnsdc#Rounding"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+      "@id" : "https://w3id.org/statbarnsdc#Suppression"
     } ]
   } ]
 }, {
@@ -344,7 +344,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
+    "@id" : "https://w3id.org/statbarnsdc#Dominance"
   } ]
 }, {
   "@id" : "_:genid51",
@@ -353,7 +353,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#MinimumDoFCheck"
+    "@id" : "https://w3id.org/statbarnsdc#MinimumDoFCheck"
   } ]
 }, {
   "@id" : "_:genid52",
@@ -378,20 +378,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#Aggregation"
+      "@id" : "https://w3id.org/statbarnsdc#Aggregation"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+      "@id" : "https://w3id.org/statbarnsdc#Noise"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#OutlierRemoval"
+      "@id" : "https://w3id.org/statbarnsdc#OutlierRemoval"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+      "@id" : "https://w3id.org/statbarnsdc#Suppression"
     } ]
   } ]
 }, {
   "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasDecimalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -403,7 +403,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#RequiredZeroCheck"
+    "@id" : "https://w3id.org/statbarnsdc#RequiredZeroCheck"
   } ]
 }, {
   "@id" : "_:genid60",
@@ -412,7 +412,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#MinimumDOF"
+    "@id" : "https://w3id.org/statbarnsdc#MinimumDOF"
   } ]
 }, {
   "@id" : "_:genid61",
@@ -427,7 +427,7 @@
   "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasDecimalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -439,7 +439,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#MinimumThreshold"
+    "@id" : "https://w3id.org/statbarnsdc#MinimumThreshold"
   } ]
 }, {
   "@id" : "_:genid64",
@@ -457,7 +457,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
+    "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
   } ]
 }, {
   "@id" : "_:genid66",
@@ -466,7 +466,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Differencing"
+    "@id" : "https://w3id.org/statbarnsdc#Differencing"
   } ]
 }, {
   "@id" : "_:genid67",
@@ -475,7 +475,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#KValue"
+    "@id" : "https://w3id.org/statbarnsdc#KValue"
   } ]
 }, {
   "@id" : "_:genid68",
@@ -484,7 +484,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#NValue"
+    "@id" : "https://w3id.org/statbarnsdc#NValue"
   } ]
 }, {
   "@id" : "_:genid69",
@@ -508,7 +508,7 @@
   "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasDecimalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -520,7 +520,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Dominance"
+    "@id" : "https://w3id.org/statbarnsdc#Dominance"
   } ]
 }, {
   "@id" : "_:genid72",
@@ -529,7 +529,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+    "@id" : "https://w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid73",
@@ -538,7 +538,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PRatio"
+    "@id" : "https://w3id.org/statbarnsdc#PRatio"
   } ]
 }, {
   "@id" : "_:genid74",
@@ -553,7 +553,7 @@
   "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasDecimalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -565,7 +565,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure"
+    "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
   } ]
 }, {
   "@id" : "_:genid77",
@@ -574,7 +574,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowCount"
+    "@id" : "https://w3id.org/statbarnsdc#LowCount"
   } ]
 }, {
   "@id" : "_:genid78",
@@ -583,7 +583,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables"
+    "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTables"
   } ]
 }, {
   "@id" : "_:genid79",
@@ -607,7 +607,7 @@
   "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasBooleanValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -616,7 +616,7 @@
   "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasBooleanValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -628,7 +628,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZero"
+    "@id" : "https://w3id.org/statbarnsdc#PresenceOfZero"
   } ]
 }, {
   "@id" : "_:genid83",
@@ -646,7 +646,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#ZeroCheckDecider"
+    "@id" : "https://w3id.org/statbarnsdc#ZeroCheckDecider"
   } ]
 }, {
   "@id" : "_:genid85",
@@ -664,7 +664,7 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+    "@id" : "https://w3id.org/statbarnsdc#LowDOF"
   } ]
 }, {
   "@id" : "_:genid87",
@@ -673,7 +673,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData"
+    "@id" : "https://w3id.org/statbarnsdc#StatbarnRelevantShowData"
   } ]
 }, {
   "@id" : "_:genid88",
@@ -688,7 +688,7 @@
   "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasBooleanValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -698,9 +698,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+      "@id" : "https://w3id.org/statbarnsdc#Noise"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+      "@id" : "https://w3id.org/statbarnsdc#Suppression"
     } ]
   } ]
 }, {
@@ -710,13 +710,13 @@
     "@id" : "https://w3id.org/dpv/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LowDOF"
+    "@id" : "https://w3id.org/statbarnsdc#LowDOF"
   } ]
 }, {
   "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue"
+    "@id" : "https://w3id.org/statbarnsdc#hasBooleanValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -726,37 +726,37 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://www.w3id.org/statbarnsdc#CalculatedRatios"
+      "@id" : "https://w3id.org/statbarnsdc#CalculatedRatios"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Clusters"
+      "@id" : "https://w3id.org/statbarnsdc#Clusters"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+      "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Endpoints"
+      "@id" : "https://w3id.org/statbarnsdc#Endpoints"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+      "@id" : "https://w3id.org/statbarnsdc#Frequencies"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#GiniCoefficient"
+      "@id" : "https://w3id.org/statbarnsdc#GiniCoefficient"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#HazardSurvivalTables"
+      "@id" : "https://w3id.org/statbarnsdc#HazardSurvivalTables"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations"
+      "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#LinkedMultilevelTables"
+      "@id" : "https://w3id.org/statbarnsdc#LinkedMultilevelTables"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Mode"
+      "@id" : "https://w3id.org/statbarnsdc#Mode"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#NonLinearConcentrationRatios"
+      "@id" : "https://w3id.org/statbarnsdc#NonLinearConcentrationRatios"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Position"
+      "@id" : "https://w3id.org/statbarnsdc#Position"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#Shape"
+      "@id" : "https://w3id.org/statbarnsdc#Shape"
     }, {
-      "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+      "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
     } ]
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc",
+  "@id" : "https://w3id.org/statbarnsdc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101"
@@ -788,19 +788,19 @@
     "@id" : "https://w3id.org/dpv/2.2/risk/owl#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc/1.0"
+    "@id" : "https://w3id.org/statbarnsdc/1.0"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@value" : "The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control."
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#AdditiveNoise",
+  "@id" : "https://w3id.org/statbarnsdc#AdditiveNoise",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    "@id" : "https://w3id.org/statbarnsdc#Noise"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Random values are added to original data to obscure individual contributions to control disclosure risk."
@@ -809,13 +809,13 @@
     "@value" : "AdditiveNoise"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#AdjustedRSquared",
+  "@id" : "https://w3id.org/statbarnsdc#AdjustedRSquared",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical measure that indicates how well a regression model explains the variability of the dependent variable."
@@ -824,10 +824,10 @@
     "@value" : "AdjustedRSquared"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Aggregation",
+  "@id" : "https://w3id.org/statbarnsdc#Aggregation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
@@ -839,13 +839,13 @@
     "@value" : "Aggregation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#AlluvialFlow",
+  "@id" : "https://w3id.org/statbarnsdc#AlluvialFlow",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A type of diagram that visualizes changes in categorical data over time or between stages, showing how groups split, merge, or flow from one category to another."
@@ -854,13 +854,13 @@
     "@value" : "AlluvialFlow"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#AnalysisOfVariance",
+  "@id" : "https://w3id.org/statbarnsdc#AnalysisOfVariance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Also reffered to as ANOVA is a statistical method used to compare the means of three or more groups."
@@ -869,13 +869,13 @@
     "@value" : "AnalysisOfVariance"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Ancova",
+  "@id" : "https://w3id.org/statbarnsdc#Ancova",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combines ANOVA and regression to compare group means while controlling for one or more continuous covariates."
@@ -884,10 +884,10 @@
     "@value" : "Ancova"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#AuxiliaryInformation",
+  "@id" : "https://w3id.org/statbarnsdc#AuxiliaryInformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
@@ -905,13 +905,13 @@
     "@value" : "AuxiliaryInformation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#BarGraph",
+  "@id" : "https://w3id.org/statbarnsdc#BarGraph",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations"
+    "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A chart that represents categorical data with rectangular bars, where the length of each bar is proportional to the value or frequency of the category."
@@ -920,13 +920,13 @@
     "@value" : "BarGraph"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#BartlettsTestOfSphericity",
+  "@id" : "https://w3id.org/statbarnsdc#BartlettsTestOfSphericity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical test used to check whether a correlation matrix is an identity matrix."
@@ -935,13 +935,13 @@
     "@value" : "BartlettsTestOfSphericity"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#BetaCoefficient",
+  "@id" : "https://w3id.org/statbarnsdc#BetaCoefficient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations"
+    "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A standardized regression coefficient that indicates the strength and direction of the relationship between a predictor and the outcome."
@@ -950,13 +950,13 @@
     "@value" : "BetaCoefficient"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#BinaryLogisticRegression",
+  "@id" : "https://w3id.org/statbarnsdc#BinaryLogisticRegression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical model used to predict the probability of a binary outcome."
@@ -965,13 +965,13 @@
     "@value" : "BinaryLogisticRegression"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#BoxPlot",
+  "@id" : "https://w3id.org/statbarnsdc#BoxPlot",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Position"
+    "@id" : "https://w3id.org/statbarnsdc#Position"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A graphical display that summarizes the distribution of a dataset using its minimum, first quartile, median, third quartile, and maximum, often highlighting outliers."
@@ -980,13 +980,13 @@
     "@value" : "BoxPlot"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#BoxsTestOfEqualityOfCovarianceMatrices",
+  "@id" : "https://w3id.org/statbarnsdc#BoxsTestOfEqualityOfCovarianceMatrices",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical test used to assess whether the covariance matrices of multiple groups are equal."
@@ -995,13 +995,13 @@
     "@value" : "BoxsTestOfEqualityOfCovarianceMatrices"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CalculatedRatios",
+  "@id" : "https://w3id.org/statbarnsdc#CalculatedRatios",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid4"
   }, {
@@ -1014,13 +1014,13 @@
     "@value" : "CalculatedRatios"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CanonicalCorrelation",
+  "@id" : "https://w3id.org/statbarnsdc#CanonicalCorrelation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measures the relationship between two sets of variables."
@@ -1029,13 +1029,13 @@
     "@value" : "CanonicalCorrelation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CategoricalAggregation",
+  "@id" : "https://w3id.org/statbarnsdc#CategoricalAggregation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Aggregation"
+    "@id" : "https://w3id.org/statbarnsdc#Aggregation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combining categories of a categorical variable to reduce the granularity of the data to reduce disclosure risk."
@@ -1044,13 +1044,13 @@
     "@value" : "CategoricalAggregation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CellKeyRounding",
+  "@id" : "https://w3id.org/statbarnsdc#CellKeyRounding",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+    "@id" : "https://w3id.org/statbarnsdc#Rounding"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Cell values in tables are rounded based on a key or algorithm to reduce risk."
@@ -1059,13 +1059,13 @@
     "@value" : "CellKeyRounding"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ChiSquaredTest",
+  "@id" : "https://w3id.org/statbarnsdc#ChiSquaredTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical test used to determine whether there is a significant association between categorical variables."
@@ -1074,10 +1074,10 @@
     "@value" : "ChiSquaredTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ClassDisclosure",
+  "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
@@ -1097,13 +1097,13 @@
     "@value" : "ClassDisclosure"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Clusters",
+  "@id" : "https://w3id.org/statbarnsdc#Clusters",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statbarn classification that covers output of cluster analysis. Cluster analysis is a statistical technique used to classify or group similar objects or individuals based on their characteristics or attributes. It aims to identify patterns, similarities, or relationships within a dataset by grouping data points into clusters."
@@ -1112,13 +1112,13 @@
     "@value" : "Clusters"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CochransQTest",
+  "@id" : "https://w3id.org/statbarnsdc#CochransQTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical test used to determine whether there are differences in proportions across three or more related groups for binary outcomes."
@@ -1127,13 +1127,13 @@
     "@value" : "CochransQTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CoefficientOfDetermination",
+  "@id" : "https://w3id.org/statbarnsdc#CoefficientOfDetermination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical measure that indicates the proportion of variance in the dependent variable explained by the independent variable(s) in a regression model."
@@ -1142,13 +1142,13 @@
     "@value" : "CoefficientOfDetermination"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CohensD",
+  "@id" : "https://w3id.org/statbarnsdc#CohensD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measure of effect size that quantifies the difference between two group means in terms of standard deviation units."
@@ -1157,13 +1157,13 @@
     "@value" : "CohensD"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CohensKappaCoefficient",
+  "@id" : "https://w3id.org/statbarnsdc#CohensKappaCoefficient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measures the level of agreement between two raters or observers for categorical data, adjusting for agreement occurring by chance."
@@ -1172,13 +1172,13 @@
     "@value" : "CohensKappaCoefficient"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ConfidenceIntervals",
+  "@id" : "https://w3id.org/statbarnsdc#ConfidenceIntervals",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Range of values, derived from sample data, that likely contain the true population parameter with a specified level of confidence."
@@ -1187,13 +1187,13 @@
     "@value" : "ConfidenceIntervals"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ContrastCoefficients",
+  "@id" : "https://w3id.org/statbarnsdc#ContrastCoefficients",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Numerical weights assigned to group means in ANOVA or regression."
@@ -1202,13 +1202,13 @@
     "@value" : "ContrastCoefficients"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ControlledRounding",
+  "@id" : "https://w3id.org/statbarnsdc#ControlledRounding",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+    "@id" : "https://w3id.org/statbarnsdc#Rounding"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Table or cell values are rounded according to specific rules to prevent disclosure risk."
@@ -1217,13 +1217,13 @@
     "@value" : "ControlledRounding"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients",
+  "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid13"
   } ],
@@ -1234,13 +1234,13 @@
     "@value" : "CorrelationCoefficients"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Covariates",
+  "@id" : "https://w3id.org/statbarnsdc#Covariates",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Continuous or categorical variables that are included in a statistical model to account for or control their effect on the outcome variable."
@@ -1249,13 +1249,13 @@
     "@value" : "Covariates"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CoxSnellRSquared",
+  "@id" : "https://w3id.org/statbarnsdc#CoxSnellRSquared",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measure of goodness-of-fit for logistic regression models."
@@ -1264,13 +1264,13 @@
     "@value" : "CoxSnellRSquared"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#CramersV",
+  "@id" : "https://w3id.org/statbarnsdc#CramersV",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measure of association between two categorical variables."
@@ -1279,13 +1279,13 @@
     "@value" : "CramersV"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Crosstabs",
+  "@id" : "https://w3id.org/statbarnsdc#Crosstabs",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A tabular method for displaying the frequency distribution of two or more categorical variables."
@@ -1294,10 +1294,10 @@
     "@value" : "Crosstabs"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Differencing",
+  "@id" : "https://w3id.org/statbarnsdc#Differencing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
@@ -1315,13 +1315,13 @@
     "@value" : "Differencing"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#DiscriminantFunctionAnalysis",
+  "@id" : "https://w3id.org/statbarnsdc#DiscriminantFunctionAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical technique used to classify observations into predefined groups and determine which variables best separate those groups."
@@ -1330,13 +1330,13 @@
     "@value" : "DiscriminantFunctionAnalysis"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#DiscriminantValidity",
+  "@id" : "https://w3id.org/statbarnsdc#DiscriminantValidity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Extent to which a construct or measurement is truly distinct from other constructs, showing it measures what it is intended to and not something else."
@@ -1345,10 +1345,10 @@
     "@value" : "DiscriminantValidity"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Dominance",
+  "@id" : "https://w3id.org/statbarnsdc#Dominance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
@@ -1368,13 +1368,13 @@
     "@value" : "Dominance"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#EigenvaluesScreePlots",
+  "@id" : "https://w3id.org/statbarnsdc#EigenvaluesScreePlots",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Eigenvalues measure the amount of variance explained by each factor, and a scree plot visualizes these values to help decide how many factors to retain."
@@ -1383,13 +1383,13 @@
     "@value" : "EigenvaluesScreePlots"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Endpoints",
+  "@id" : "https://w3id.org/statbarnsdc#Endpoints",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid29"
   }, {
@@ -1402,13 +1402,13 @@
     "@value" : "Endpoints"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#EtaSquared",
+  "@id" : "https://w3id.org/statbarnsdc#EtaSquared",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measure of effect size that indicates the proportion of total variance in a dependent variable explained by an independent variable in ANOVA or similar analyses."
@@ -1417,13 +1417,13 @@
     "@value" : "EtaSquared"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#FactorAnalysis",
+  "@id" : "https://w3id.org/statbarnsdc#FactorAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CalculatedRatios"
+    "@id" : "https://w3id.org/statbarnsdc#CalculatedRatios"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical method used to identify underlying latent factors that explain the patterns of correlations among observed variables."
@@ -1432,28 +1432,13 @@
     "@value" : "FactorAnalysis"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#FreqeuncyTable",
+  "@id" : "https://w3id.org/statbarnsdc#Frequencies",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "This class covers frequencies, i.e, counts of things, either in tables (most common), in certain graphs such as histograms or bar charts, or single as in a description of the number of survey participants. This also includes frequencies expressed as a proportion of some total."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "FreqeuncyTable"
-  } ]
-}, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Frequencies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid31"
   }, {
@@ -1468,13 +1453,28 @@
     "@value" : "Frequencies"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#FriedmanTest",
+  "@id" : "https://w3id.org/statbarnsdc#FrequencyTable",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "This class covers frequencies, i.e, counts of things, either in tables (most common), in certain graphs such as histograms or bar charts, or single as in a description of the number of survey participants. This also includes frequencies expressed as a proportion of some total."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "FreqeuncyTable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/statbarnsdc#FriedmanTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/statbarnsdc"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Non-parametric statistical test used to detect differences in treatments across multiple related groups."
@@ -1483,13 +1483,13 @@
     "@value" : "FriedmanTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#GeneralLinearModel",
+  "@id" : "https://w3id.org/statbarnsdc#GeneralLinearModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Models a continuous outcome as a linear combination of predictor variables."
@@ -1498,13 +1498,13 @@
     "@value" : "GeneralLinearModel"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#GeographicalAggregation",
+  "@id" : "https://w3id.org/statbarnsdc#GeographicalAggregation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Aggregation"
+    "@id" : "https://w3id.org/statbarnsdc#Aggregation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combining spatial or location-based data into larger geographic units to reduce disclosure risk"
@@ -1513,13 +1513,13 @@
     "@value" : "GeographicalAggregation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#GiniCoefficient",
+  "@id" : "https://w3id.org/statbarnsdc#GiniCoefficient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid34"
   } ],
@@ -1530,13 +1530,13 @@
     "@value" : "GiniCoefficient"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#GiniCurves",
+  "@id" : "https://w3id.org/statbarnsdc#GiniCurves",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#GiniCoefficient"
+    "@id" : "https://w3id.org/statbarnsdc#GiniCoefficient"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A graphical representation showing the cumulative proportion of the population against the cumulative proportion of the resource."
@@ -1545,13 +1545,13 @@
     "@value" : "GiniCurves"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HazardRatio",
+  "@id" : "https://w3id.org/statbarnsdc#HazardRatio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure used in survival analysis that compares the hazard (event rate) between two groups over time."
@@ -1560,13 +1560,13 @@
     "@value" : "HazardRatio"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HazardSurvivalTables",
+  "@id" : "https://w3id.org/statbarnsdc#HazardSurvivalTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid35"
   }, {
@@ -1579,13 +1579,13 @@
     "@value" : "HazardSurvivalTables"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HazardTables",
+  "@id" : "https://w3id.org/statbarnsdc#HazardTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#HazardSurvivalTables"
+    "@id" : "https://w3id.org/statbarnsdc#HazardSurvivalTables"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Tables that summarize the hazard (event) rates over time."
@@ -1594,13 +1594,13 @@
     "@value" : "HazardTables"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Heatmap",
+  "@id" : "https://w3id.org/statbarnsdc#Heatmap",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A graphical representation of data where values are displayed as colors in a matrix or grid."
@@ -1609,13 +1609,13 @@
     "@value" : "Heatmap"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HerfindahlHirschmanIndex",
+  "@id" : "https://w3id.org/statbarnsdc#HerfindahlHirschmanIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#NonLinearConcentrationRatios"
+    "@id" : "https://w3id.org/statbarnsdc#NonLinearConcentrationRatios"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of concentration calculated by summing the squares of the shares of all elements."
@@ -1624,13 +1624,13 @@
     "@value" : "HerfindahlHirschmanIndex"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Histogram",
+  "@id" : "https://w3id.org/statbarnsdc#Histogram",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A graphical representation of a dataset that displays the frequency of values within consecutive intervals."
@@ -1639,13 +1639,13 @@
     "@value" : "Histogram"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HomogeneityOfRegression",
+  "@id" : "https://w3id.org/statbarnsdc#HomogeneityOfRegression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An assumption in ANCOVA stating that the relationship (slope) between the covariate and the dependent variable is the same across all groups."
@@ -1654,13 +1654,13 @@
     "@value" : "HomogeneityOfRegression"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HomogeneityOfVariance",
+  "@id" : "https://w3id.org/statbarnsdc#HomogeneityOfVariance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An assumption in statistical tests (like ANOVA) that the variances of the dependent variable are equal across all groups or samples being compared."
@@ -1669,13 +1669,13 @@
     "@value" : "HomogeneityOfVariance"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HomogeneityOfVarianceCovarianceMatrices",
+  "@id" : "https://w3id.org/statbarnsdc#HomogeneityOfVarianceCovarianceMatrices",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An assumption in multivariate analyses (like MANOVA) that the variance and covariance structure of the dependent variables is equal across all groups."
@@ -1684,13 +1684,13 @@
     "@value" : "HomogeneityOfVarianceCovarianceMatrices"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#HosmerLemeshowTest",
+  "@id" : "https://w3id.org/statbarnsdc#HosmerLemeshowTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical test used in logistic regression to assess the goodness-of-fit of the model by comparing observed and predicted event probabilities across subgroups."
@@ -1699,10 +1699,10 @@
     "@value" : "HosmerLemeshowTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ImplicitTables",
+  "@id" : "https://w3id.org/statbarnsdc#ImplicitTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
@@ -1720,13 +1720,13 @@
     "@value" : "ImplicitTables"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#IndependentTtests",
+  "@id" : "https://w3id.org/statbarnsdc#IndependentTtests",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical test used to compare the means of two independent groups to determine if there is a significant difference between them."
@@ -1735,13 +1735,13 @@
     "@value" : "IndependentTtests"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#InterquartileRange",
+  "@id" : "https://w3id.org/statbarnsdc#InterquartileRange",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Position"
+    "@id" : "https://w3id.org/statbarnsdc#Position"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The range between the first quartile and third quartile of a dataset."
@@ -1750,10 +1750,10 @@
     "@value" : "InterquartileRange"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#KValue",
+  "@id" : "https://w3id.org/statbarnsdc#KValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -1767,13 +1767,13 @@
     "@value" : "KValue"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#KaiserMeyerOlkinTest",
+  "@id" : "https://w3id.org/statbarnsdc#KaiserMeyerOlkinTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of sampling adequacy for factor analysis, indicating whether the data are suitable for detecting underlying factors."
@@ -1782,13 +1782,13 @@
     "@value" : "KaiserMeyerOlkinTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#KaplanMeier",
+  "@id" : "https://w3id.org/statbarnsdc#KaplanMeier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#HazardSurvivalTables"
+    "@id" : "https://w3id.org/statbarnsdc#HazardSurvivalTables"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical method used in survival analysis to estimate the probability of survival over time."
@@ -1797,13 +1797,13 @@
     "@value" : "KaplanMeier"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#KappaMeasureOfAgreement",
+  "@id" : "https://w3id.org/statbarnsdc#KappaMeasureOfAgreement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistic that quantifies the agreement between two raters or observers for categorical data, adjusting for chance agreement."
@@ -1812,13 +1812,13 @@
     "@value" : "KappaMeasureOfAgreement"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#KendallsRank",
+  "@id" : "https://w3id.org/statbarnsdc#KendallsRank",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of strength and direction of association between two ranked variables."
@@ -1827,13 +1827,13 @@
     "@value" : "KendallsRank"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#KernelEstimates",
+  "@id" : "https://w3id.org/statbarnsdc#KernelEstimates",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Estimate the probability density function or distribution."
@@ -1842,13 +1842,13 @@
     "@value" : "KernelEstimates"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Kolmogorov-SmirnovTest",
+  "@id" : "https://w3id.org/statbarnsdc#Kolmogorov-SmirnovTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical test used to compare a sample distribution with a reference probability distribution or to compare two sample distributions, assessing whether they differ significantly."
@@ -1857,13 +1857,13 @@
     "@value" : "Kolmogorov-SmirnovTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Kruskal-WallisTest",
+  "@id" : "https://w3id.org/statbarnsdc#Kruskal-WallisTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A non-parametric statistical test used to compare the medians of three or more independent groups to determine if they come from the same distribution."
@@ -1872,13 +1872,13 @@
     "@value" : "Kruskal-WallisTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Kurtosis",
+  "@id" : "https://w3id.org/statbarnsdc#Kurtosis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Shape"
+    "@id" : "https://w3id.org/statbarnsdc#Shape"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical measure that describes the “tailedness” or peakedness of a data distribution."
@@ -1887,13 +1887,13 @@
     "@value" : "Kurtosis"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Lambda",
+  "@id" : "https://w3id.org/statbarnsdc#Lambda",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of association for categorical variables, indicating the proportional reduction in error when predicting the dependent variable using the independent variable."
@@ -1902,13 +1902,13 @@
     "@value" : "Lambda"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LevenesTest",
+  "@id" : "https://w3id.org/statbarnsdc#LevenesTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical test used to assess the equality of variances (homogeneity of variance) across two or more groups."
@@ -1917,13 +1917,13 @@
     "@value" : "LevenesTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LineGraph",
+  "@id" : "https://w3id.org/statbarnsdc#LineGraph",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A chart that connects data points with lines to show trends, patterns, or changes of a variable over a continuous scale."
@@ -1932,13 +1932,13 @@
     "@value" : "LineGraph"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations",
+  "@id" : "https://w3id.org/statbarnsdc#LinearAggregations",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid41"
   }, {
@@ -1953,13 +1953,13 @@
     "@value" : "LinearAggregations"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LinearRegressionCoefficients",
+  "@id" : "https://w3id.org/statbarnsdc#LinearRegressionCoefficients",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Numerical values in a linear regression model that quantify the effect of each predictor variable on the outcome."
@@ -1968,13 +1968,13 @@
     "@value" : "LinearRegressionCoefficients"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LinkedMultilevelTables",
+  "@id" : "https://w3id.org/statbarnsdc#LinkedMultilevelTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Multilevel and linked tables are used to summarize and analyze the relationship between multiple categorical variables. These often analyse nested categorical data in formats such as two or three way contingency tables or hierarchical contingency tables."
@@ -1983,13 +1983,13 @@
     "@value" : "LinkedMultilevelTables"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LogLinearForHigherOrderTables",
+  "@id" : "https://w3id.org/statbarnsdc#LogLinearForHigherOrderTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical model used to analyze the relationships among three or more categorical variables."
@@ -1998,13 +1998,13 @@
     "@value" : "LogLinearForHigherOrderTables"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LogisticRegression",
+  "@id" : "https://w3id.org/statbarnsdc#LogisticRegression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical model used to predict the probability of a binary or categorical outcome."
@@ -2013,13 +2013,13 @@
     "@value" : "LogisticRegression"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Logit",
+  "@id" : "https://w3id.org/statbarnsdc#Logit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Used as the link function in logistic regression."
@@ -2028,13 +2028,13 @@
     "@value" : "Logit"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LongitudinalEstimation",
+  "@id" : "https://w3id.org/statbarnsdc#LongitudinalEstimation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical method used to analyze data collected from the same subjects over time"
@@ -2043,10 +2043,10 @@
     "@value" : "LongitudinalEstimation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LowCount",
+  "@id" : "https://w3id.org/statbarnsdc#LowCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
@@ -2064,10 +2064,10 @@
     "@value" : "LowCount"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#LowDOF",
+  "@id" : "https://w3id.org/statbarnsdc#LowDOF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/owl#Risk"
@@ -2085,13 +2085,13 @@
     "@value" : "LowDOF"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MahalanobisDistance",
+  "@id" : "https://w3id.org/statbarnsdc#MahalanobisDistance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Shape"
+    "@id" : "https://w3id.org/statbarnsdc#Shape"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of the distance between a point and a distribution."
@@ -2100,13 +2100,13 @@
     "@value" : "MahalanobisDistance"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Mancova",
+  "@id" : "https://w3id.org/statbarnsdc#Mancova",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical technique that extends MANOVA by including covariates."
@@ -2115,13 +2115,13 @@
     "@value" : "Mancova"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MannWhitneyUTest",
+  "@id" : "https://w3id.org/statbarnsdc#MannWhitneyUTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A non-parametric test used to compare differences between two independent groups on an ordinal or continuous outcome when the data do not assume a normal distribution."
@@ -2130,13 +2130,13 @@
     "@value" : "MannWhitneyUTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MauchlySphericityTest",
+  "@id" : "https://w3id.org/statbarnsdc#MauchlySphericityTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical test used in repeated-measures ANOVA to assess whether the variances of the differences between all combinations of related groups are equal."
@@ -2145,13 +2145,13 @@
     "@value" : "MauchlySphericityTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Maximum",
+  "@id" : "https://w3id.org/statbarnsdc#Maximum",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Endpoints"
+    "@id" : "https://w3id.org/statbarnsdc#Endpoints"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The highest observed or recorded values of outcome."
@@ -2160,13 +2160,13 @@
     "@value" : "Maximum"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#McNemarsTest",
+  "@id" : "https://w3id.org/statbarnsdc#McNemarsTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical test used to analyze paired nominal data, typically to determine whether there is a significant change or difference in proportions for two related groups."
@@ -2175,13 +2175,13 @@
     "@value" : "McNemarsTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Mean",
+  "@id" : "https://w3id.org/statbarnsdc#Mean",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations"
+    "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The arithmetic average of a set of values, calculated by summing all values and dividing by their count."
@@ -2190,13 +2190,13 @@
     "@value" : "Mean"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MeanPlots",
+  "@id" : "https://w3id.org/statbarnsdc#MeanPlots",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations"
+    "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Graphs that display the average values of a variable for different groups or conditions."
@@ -2205,13 +2205,13 @@
     "@value" : "MeanPlots"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Median",
+  "@id" : "https://w3id.org/statbarnsdc#Median",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Position"
+    "@id" : "https://w3id.org/statbarnsdc#Position"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The middle value of a dataset when the values are arranged in order, dividing the data into two equal halves."
@@ -2220,13 +2220,13 @@
     "@value" : "Median"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Minimum",
+  "@id" : "https://w3id.org/statbarnsdc#Minimum",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Endpoints"
+    "@id" : "https://w3id.org/statbarnsdc#Endpoints"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The lowest observed or recorded values of outcome."
@@ -2235,10 +2235,10 @@
     "@value" : "Minimum"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MinimumDOF",
+  "@id" : "https://w3id.org/statbarnsdc#MinimumDOF",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -2252,10 +2252,10 @@
     "@value" : "MinimumDOF"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MinimumDoFCheck",
+  "@id" : "https://w3id.org/statbarnsdc#MinimumDoFCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -2271,10 +2271,10 @@
     "@value" : "MinimumDoFCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MinimumThreshold",
+  "@id" : "https://w3id.org/statbarnsdc#MinimumThreshold",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -2288,10 +2288,10 @@
     "@value" : "MinimumThreshold"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MinimumThresholdCheck",
+  "@id" : "https://w3id.org/statbarnsdc#MinimumThresholdCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -2307,13 +2307,13 @@
     "@value" : "MinimumThresholdCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Mode",
+  "@id" : "https://w3id.org/statbarnsdc#Mode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid65"
   }, {
@@ -2326,13 +2326,28 @@
     "@value" : "Mode"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MultinomialLogit",
+  "@id" : "https://w3id.org/statbarnsdc#ModeCalculation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#Mode"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Most frequently occuring item in a dataset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ModeCalculation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/statbarnsdc#MultinomialLogit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/statbarnsdc"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical model used to predict outcomes where the dependent variable has more than two discrete categories."
@@ -2341,13 +2356,13 @@
     "@value" : "MultinomialLogit"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MultipleRegression",
+  "@id" : "https://w3id.org/statbarnsdc#MultipleRegression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical method that models the relationship between one continuous dependent variable and two or more independent variables."
@@ -2356,13 +2371,13 @@
     "@value" : "MultipleRegression"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MultipleRounding",
+  "@id" : "https://w3id.org/statbarnsdc#MultipleRounding",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Rounding"
+    "@id" : "https://w3id.org/statbarnsdc#Rounding"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Values are rounded to the nearest multiple of a chosen base to reduce disclosure risk."
@@ -2371,13 +2386,13 @@
     "@value" : "MultipleRounding"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MultiplicativeNoise",
+  "@id" : "https://w3id.org/statbarnsdc#MultiplicativeNoise",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    "@id" : "https://w3id.org/statbarnsdc#Noise"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Original data values are multiplied by random factors to mask individual contributions to reduce disclosure risk."
@@ -2386,13 +2401,13 @@
     "@value" : "MultiplicativeNoise"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#MultivariateAnalysisOfVariance",
+  "@id" : "https://w3id.org/statbarnsdc#MultivariateAnalysisOfVariance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Also reffered to as MANOVA, is a statistical technique that tests for differences across groups on two or more dependent variables simultaneously."
@@ -2401,10 +2416,10 @@
     "@value" : "MultivariateAnalysisOfVariance"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#NKCheck",
+  "@id" : "https://w3id.org/statbarnsdc#NKCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -2422,10 +2437,10 @@
     "@value" : "NKCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#NValue",
+  "@id" : "https://w3id.org/statbarnsdc#NValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -2439,13 +2454,13 @@
     "@value" : "NValue"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#NagelkerkeRSquared",
+  "@id" : "https://w3id.org/statbarnsdc#NagelkerkeRSquared",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A pseudo R-squared measure for logistic regression."
@@ -2454,10 +2469,10 @@
     "@value" : "NagelkerkeRSquared"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Noise",
+  "@id" : "https://w3id.org/statbarnsdc#Noise",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
@@ -2469,13 +2484,13 @@
     "@value" : "Noise"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#NonLinearConcentrationRatios",
+  "@id" : "https://w3id.org/statbarnsdc#NonLinearConcentrationRatios",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid71"
   }, {
@@ -2488,13 +2503,13 @@
     "@value" : "NonLinearConcentrationRatios"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#NumericalAggregation",
+  "@id" : "https://w3id.org/statbarnsdc#NumericalAggregation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Aggregation"
+    "@id" : "https://w3id.org/statbarnsdc#Aggregation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Summarizing or combining individual numerical values to reduce disclosure risk"
@@ -2503,13 +2518,13 @@
     "@value" : "NumericalAggregation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#OddRatios",
+  "@id" : "https://w3id.org/statbarnsdc#OddRatios",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CalculatedRatios"
+    "@id" : "https://w3id.org/statbarnsdc#CalculatedRatios"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of association that quantifies how the odds of an event occurring change with exposure to a predictor."
@@ -2518,13 +2533,13 @@
     "@value" : "OddRatios"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#OmnibusTestsOfModelCoefficients",
+  "@id" : "https://w3id.org/statbarnsdc#OmnibusTestsOfModelCoefficients",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical tests that assess whether a set of predictors, taken together, significantly improves the fit of a model compared to a null model with no predictors."
@@ -2533,10 +2548,10 @@
     "@value" : "OmnibusTestsOfModelCoefficients"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#OutlierRemoval",
+  "@id" : "https://w3id.org/statbarnsdc#OutlierRemoval",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
@@ -2548,10 +2563,10 @@
     "@value" : "OutlierRemoval"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PQCheck",
+  "@id" : "https://w3id.org/statbarnsdc#PQCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -2567,10 +2582,10 @@
     "@value" : "PQCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PRatio",
+  "@id" : "https://w3id.org/statbarnsdc#PRatio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -2584,13 +2599,13 @@
     "@value" : "PRatio"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PairedTtests",
+  "@id" : "https://w3id.org/statbarnsdc#PairedTtests",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical test used to compare the means of two related or matched groups to determine if there is a significant difference between them."
@@ -2599,13 +2614,13 @@
     "@value" : "PairedTtests"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PanelDataModels",
+  "@id" : "https://w3id.org/statbarnsdc#PanelDataModels",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical models designed to analyze data that follow the same units over time for both cross-sectional and time-series variation."
@@ -2614,13 +2629,13 @@
     "@value" : "PanelDataModels"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ParallelAnalysis",
+  "@id" : "https://w3id.org/statbarnsdc#ParallelAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A technique in factor analysis or principal component analysis used to determine the number of factors or components to retain by comparing the observed eigenvalues with those obtained from randomly generated data."
@@ -2629,13 +2644,13 @@
     "@value" : "ParallelAnalysis"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PartialCorrelationCoefficients",
+  "@id" : "https://w3id.org/statbarnsdc#PartialCorrelationCoefficients",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measures the relationship between two variables while controlling the effect of one or more additional variables."
@@ -2644,13 +2659,13 @@
     "@value" : "PartialCorrelationCoefficients"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PartialEtaSquared",
+  "@id" : "https://w3id.org/statbarnsdc#PartialEtaSquared",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of effect size in ANOVA that indicates the proportion of variance in the dependent variable explained by an independent variable, after controlling for other variables."
@@ -2659,13 +2674,13 @@
     "@value" : "PartialEtaSquared"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PearsonsProductMomentCorrelationCoefficient",
+  "@id" : "https://w3id.org/statbarnsdc#PearsonsProductMomentCorrelationCoefficient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistic that measures the strength and direction of the linear relationship between two continuous variables."
@@ -2674,13 +2689,13 @@
     "@value" : "PearsonsProductMomentCorrelationCoefficient"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PearsonsR",
+  "@id" : "https://w3id.org/statbarnsdc#PearsonsR",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistic that quantifies the strength and direction of the linear relationship between two continuous variables."
@@ -2689,13 +2704,13 @@
     "@value" : "PearsonsR"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PhiCoefficient",
+  "@id" : "https://w3id.org/statbarnsdc#PhiCoefficient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of association between two binary variables."
@@ -2704,13 +2719,13 @@
     "@value" : "PhiCoefficient"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PieChart",
+  "@id" : "https://w3id.org/statbarnsdc#PieChart",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A circular chart that represents proportions of a whole by dividing the circle into slices corresponding to the relative sizes of categories."
@@ -2719,13 +2734,13 @@
     "@value" : "PieChart"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Position",
+  "@id" : "https://w3id.org/statbarnsdc#Position",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid76"
   }, {
@@ -2738,10 +2753,10 @@
     "@value" : "Position"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTableCheck",
+  "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTableCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -2757,10 +2772,10 @@
     "@value" : "PresenceOfLinkedTableCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfLinkedTables",
+  "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -2774,10 +2789,10 @@
     "@value" : "PresenceOfLinkedTables"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZero",
+  "@id" : "https://w3id.org/statbarnsdc#PresenceOfZero",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -2791,10 +2806,10 @@
     "@value" : "PresenceOfZero"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PresenceOfZeroCheck",
+  "@id" : "https://w3id.org/statbarnsdc#PresenceOfZeroCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -2810,13 +2825,13 @@
     "@value" : "PresenceOfZeroCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PrevalenceRatio",
+  "@id" : "https://w3id.org/statbarnsdc#PrevalenceRatio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure that compares the proportion of individuals with a condition in an exposed group to that in an unexposed group."
@@ -2825,13 +2840,13 @@
     "@value" : "PrevalenceRatio"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PrimarySuppression",
+  "@id" : "https://w3id.org/statbarnsdc#PrimarySuppression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    "@id" : "https://w3id.org/statbarnsdc#Suppression"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Masking of cells containing sensitive or high-risk values in a table to prevent disclosure."
@@ -2840,13 +2855,13 @@
     "@value" : "PrimarySuppression"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PrincipalComponentAnalysis",
+  "@id" : "https://w3id.org/statbarnsdc#PrincipalComponentAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A dimensionality reduction technique that transforms correlated variables into a smaller set of uncorrelated components while retaining most of the original variance."
@@ -2855,13 +2870,13 @@
     "@value" : "PrincipalComponentAnalysis"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Probit",
+  "@id" : "https://w3id.org/statbarnsdc#Probit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A regression model used to predict the probability of a binary outcome by applying the inverse standard normal cumulative distribution function."
@@ -2870,13 +2885,13 @@
     "@value" : "Probit"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#PseudoRSquared",
+  "@id" : "https://w3id.org/statbarnsdc#PseudoRSquared",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Measure used in models like logistic regression to indicate the proportion of variation in the dependent variable explained by the model."
@@ -2885,13 +2900,13 @@
     "@value" : "PseudoRSquared"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Quartiles",
+  "@id" : "https://w3id.org/statbarnsdc#Quartiles",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Position"
+    "@id" : "https://w3id.org/statbarnsdc#Position"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Values that divide a dataset into four equal parts."
@@ -2900,13 +2915,13 @@
     "@value" : "Quartiles"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#RSquared",
+  "@id" : "https://w3id.org/statbarnsdc#RSquared",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Statistical measure that indicates the proportion of variance in the dependent variable explained by the independent variable(s) in a regression model."
@@ -2915,13 +2930,13 @@
     "@value" : "RSquared"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Range",
+  "@id" : "https://w3id.org/statbarnsdc#Range",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Endpoints"
+    "@id" : "https://w3id.org/statbarnsdc#Endpoints"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The difference between the maximum and minimum values of a dataset, summarising the dispersion of the data."
@@ -2930,10 +2945,10 @@
     "@value" : "Range"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#RequiredZeroCheck",
+  "@id" : "https://w3id.org/statbarnsdc#RequiredZeroCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -2949,13 +2964,13 @@
     "@value" : "RequiredZeroCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#RiskRatios",
+  "@id" : "https://w3id.org/statbarnsdc#RiskRatios",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CalculatedRatios"
+    "@id" : "https://w3id.org/statbarnsdc#CalculatedRatios"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure that compares the probability of an event occurring in an exposed group to the probability in an unexposed group."
@@ -2964,10 +2979,10 @@
     "@value" : "RiskRatios"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Rounding",
+  "@id" : "https://w3id.org/statbarnsdc#Rounding",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
@@ -2979,13 +2994,13 @@
     "@value" : "Rounding"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ScatterGraph",
+  "@id" : "https://w3id.org/statbarnsdc#ScatterGraph",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Also reffered to as scatter plot, a chart that displays individual data points on a two-dimensional plane, showing the relationship or correlation between two continuous variables."
@@ -2994,13 +3009,13 @@
     "@value" : "ScatterGraph"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#SecondarySuppression",
+  "@id" : "https://w3id.org/statbarnsdc#SecondarySuppression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Suppression"
+    "@id" : "https://w3id.org/statbarnsdc#Suppression"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The additional suppression of non-sensitive cells in a table to prevent disclosure."
@@ -3009,13 +3024,13 @@
     "@value" : "SecondarySuppression"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Shape",
+  "@id" : "https://w3id.org/statbarnsdc#Shape",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid86"
   } ],
@@ -3026,13 +3041,13 @@
     "@value" : "Shape"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#SimpleConcentrationRatio",
+  "@id" : "https://w3id.org/statbarnsdc#SimpleConcentrationRatio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure that quantifies the dominance or contribution of the largest values or components in a dataset."
@@ -3041,13 +3056,13 @@
     "@value" : "SimpleConcentrationRatio"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Skewness",
+  "@id" : "https://w3id.org/statbarnsdc#Skewness",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Shape"
+    "@id" : "https://w3id.org/statbarnsdc#Shape"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistical measure that describes the asymmetry of a data distribution around its mean."
@@ -3056,13 +3071,13 @@
     "@value" : "Skewness"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#SmoothedHistogram",
+  "@id" : "https://w3id.org/statbarnsdc#SmoothedHistogram",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A visualization of a dataset’s distribution where raw histogram counts are smoothed to show a continuous approximation of the underlying probability density."
@@ -3071,13 +3086,13 @@
     "@value" : "SmoothedHistogram"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#SpearmansRankCorrelationCoefficient",
+  "@id" : "https://w3id.org/statbarnsdc#SpearmansRankCorrelationCoefficient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Non-parametric measure that assesses the strength and direction of the monotonic relationship between two ranked or ordinal variables."
@@ -3086,13 +3101,13 @@
     "@value" : "SpearmansRankCorrelationCoefficient"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#StandardDeviation",
+  "@id" : "https://w3id.org/statbarnsdc#StandardDeviation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Shape"
+    "@id" : "https://w3id.org/statbarnsdc#Shape"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of how spread out or dispersed the values in a dataset are from the mean."
@@ -3101,13 +3116,13 @@
     "@value" : "StandardDeviation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#StandardisedRegressionCoefficients",
+  "@id" : "https://w3id.org/statbarnsdc#StandardisedRegressionCoefficients",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Regression coefficients that have been rescaled to have unit variance, allowing the comparison of the relative strength of different predictors in a regression model."
@@ -3116,10 +3131,10 @@
     "@value" : "StandardisedRegressionCoefficients"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Statbarn",
+  "@id" : "https://w3id.org/statbarnsdc#Statbarn",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The Statbarn taxonomy is a framework that classifies types of statisticalanalyses by their disclosure characteristics, including risk, exceptions, and mitigation measures for its use in output statistical disclosure control."
@@ -3128,10 +3143,10 @@
     "@value" : "Statbarn"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#StatbarnDataCheck",
+  "@id" : "https://w3id.org/statbarnsdc#StatbarnDataCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
@@ -3147,10 +3162,10 @@
     "@value" : "StatbarnDataCheck"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#StatbarnRelevantShowData",
+  "@id" : "https://w3id.org/statbarnsdc#StatbarnRelevantShowData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -3164,13 +3179,13 @@
     "@value" : "StatbarnRelevantShowData"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests",
+  "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Statbarn"
+    "@id" : "https://w3id.org/statbarnsdc#Statbarn"
   }, {
     "@id" : "_:genid90"
   } ],
@@ -3181,13 +3196,13 @@
     "@value" : "StatisticalHypothesisTests"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#StructuralEquationModelling",
+  "@id" : "https://w3id.org/statbarnsdc#StructuralEquationModelling",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A multivariate statistical technique that analyzes complex relationships among observed and latent variables, combining factor analysis and multiple regression into a single model."
@@ -3196,13 +3211,13 @@
     "@value" : "StructuralEquationModelling"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Sum",
+  "@id" : "https://w3id.org/statbarnsdc#Sum",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations"
+    "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The total obtained by adding together all the values."
@@ -3211,10 +3226,10 @@
     "@value" : "Sum"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#Suppression",
+  "@id" : "https://w3id.org/statbarnsdc#Suppression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
@@ -3226,13 +3241,13 @@
     "@value" : "Suppression"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#SurvivalTables",
+  "@id" : "https://w3id.org/statbarnsdc#SurvivalTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#HazardSurvivalTables"
+    "@id" : "https://w3id.org/statbarnsdc#HazardSurvivalTables"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Tables that show the probability of survival at different time intervals"
@@ -3241,13 +3256,13 @@
     "@value" : "SurvivalTables"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#TargetedNoise",
+  "@id" : "https://w3id.org/statbarnsdc#TargetedNoise",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Noise"
+    "@id" : "https://w3id.org/statbarnsdc#Noise"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Noise is selectively added to specific high-risk values or records to reduce disclosure risk."
@@ -3256,13 +3271,13 @@
     "@value" : "TargetedNoise"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#TemporalAggregation",
+  "@id" : "https://w3id.org/statbarnsdc#TemporalAggregation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Aggregation"
+    "@id" : "https://w3id.org/statbarnsdc#Aggregation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combining data over time periods to reduce disclosure risk"
@@ -3271,13 +3286,13 @@
     "@value" : "TemporalAggregation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ThreeStageLeastSquares",
+  "@id" : "https://w3id.org/statbarnsdc#ThreeStageLeastSquares",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An econometric method that estimates systems of simultaneous equations by combining Two-Stage Least Squares (2SLS) with seemingly unrelated regression."
@@ -3286,13 +3301,13 @@
     "@value" : "ThreeStageLeastSquares"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#TrimmedMean",
+  "@id" : "https://w3id.org/statbarnsdc#TrimmedMean",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#LinearAggregations"
+    "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A measure of central tendency calculated by removing a specified percentage of the smallest and largest values from a dataset and then computing the mean of the remaining values."
@@ -3301,13 +3316,13 @@
     "@value" : "TrimmedMean"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#TukeysHonestySignificantDifferenceTest",
+  "@id" : "https://w3id.org/statbarnsdc#TukeysHonestySignificantDifferenceTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A post-hoc analysis used after ANOVA to compare all possible pairs of group means and determine which differences are statistically significant."
@@ -3316,13 +3331,13 @@
     "@value" : "TukeysHonestySignificantDifferenceTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#TwoStageLeastSquares",
+  "@id" : "https://w3id.org/statbarnsdc#TwoStageLeastSquares",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An econometric method used to estimate parameters in simultaneous equations models."
@@ -3331,13 +3346,13 @@
     "@value" : "TwoStageLeastSquares"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#TwoWayAnalysisOfVariance",
+  "@id" : "https://w3id.org/statbarnsdc#TwoWayAnalysisOfVariance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Two-Way ANOVA is a statistical technique that examines the effect of two independent factors on a continuous dependent variable."
@@ -3346,13 +3361,13 @@
     "@value" : "TwoWayAnalysisOfVariance"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#VarianceCovarianceMatrix",
+  "@id" : "https://w3id.org/statbarnsdc#VarianceCovarianceMatrix",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A square matrix that displays the variances of variables along the diagonal and the covariances between variables in the off-diagonal elements."
@@ -3361,13 +3376,13 @@
     "@value" : "VarianceCovarianceMatrix"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#WaterfallChart",
+  "@id" : "https://w3id.org/statbarnsdc#WaterfallChart",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#Frequencies"
+    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A type of chart that visualizes how an initial value is affected by sequential positive and negative changes."
@@ -3376,13 +3391,13 @@
     "@value" : "WaterfallChart"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#WilcoxonSignedRankTest",
+  "@id" : "https://w3id.org/statbarnsdc#WilcoxonSignedRankTest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A non-parametric test used to compare two related or paired samples to assess whether their population mean ranks differ, often as an alternative to the paired t-test when data are not normally distributed."
@@ -3391,13 +3406,13 @@
     "@value" : "WilcoxonSignedRankTest"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#WilksLambda",
+  "@id" : "https://w3id.org/statbarnsdc#WilksLambda",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#StatisticalHypothesisTests"
+    "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A statistic used in multivariate analysis (like MANOVA) to test whether group means on a combination of dependent variables are equal, with smaller values indicating greater differences between groups."
@@ -3406,10 +3421,10 @@
     "@value" : "WilksLambda"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ZeroCheckDecider",
+  "@id" : "https://w3id.org/statbarnsdc#ZeroCheckDecider",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
@@ -3423,13 +3438,13 @@
     "@value" : "ZeroCheckDecider"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#ZeroOrderCorrelation",
+  "@id" : "https://w3id.org/statbarnsdc#ZeroOrderCorrelation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/statbarnsdc#CorrelationCoefficients"
+    "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A simple bivariate correlation between two variables"
@@ -3438,10 +3453,10 @@
     "@value" : "ZeroOrderCorrelation"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#hasBooleanValue",
+  "@id" : "https://w3id.org/statbarnsdc#hasBooleanValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -3453,10 +3468,10 @@
     "@value" : "hasBooleanValue"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/statbarnsdc#hasDecimalValue",
+  "@id" : "https://w3id.org/statbarnsdc#hasDecimalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://www.w3id.org/statbarnsdc"
+    "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
