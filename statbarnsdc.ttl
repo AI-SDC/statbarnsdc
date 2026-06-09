@@ -1014,17 +1014,12 @@
                        skos:definition "To check the sizes if subgroups (e.g. table cells) meet or exceed the specified value of MinimumThreshold." ;
                        skos:prefLabel "MinimumThresholdCheck" .
 
-
 ###  https://w3id.org/statbarnsdc#Mode
 :Mode rdf:type owl:Class ;
       rdfs:subClassOf :Statbarn ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty dpv-owl:hasRisk ;
                         owl:someValuesFrom :ClassDisclosure
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty dpv-owl:hasRisk ;
-                        owl:someValuesFrom :Differencing
                       ] ;
       rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
       skos:definition "The value or values that occur most frequently in a dataset. It represents the peak or highest point on a distribution's histogram." ;
