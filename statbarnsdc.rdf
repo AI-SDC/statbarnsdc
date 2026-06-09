@@ -1441,12 +1441,6 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#ClassDisclosure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#Differencing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>The value or values that occur most frequently in a dataset. It represents the peak or highest point on a distribution&apos;s histogram.</skos:definition>
         <skos:prefLabel>Mode</skos:prefLabel>
