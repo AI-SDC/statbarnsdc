@@ -1,9 +1,9 @@
 @prefix : <https://w3id.org/statbarnsdc#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix sdc: <https://w3id.org/statbarnsdc> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -19,16 +19,33 @@
                                 owl:versionIRI <https://w3id.org/statbarnsdc/1.0> ;
                                 owl:imports <https://w3id.org/dpv/2.2/owl#> ,
                                             <https://w3id.org/dpv/2.2/risk/owl#> ;
+                                dcterms:bibliographicCitation "Trupti Padiya, Jim Smith, Felix Ritchie, Elizabeth Green, Amy Tilbrook, StatbarnSDC Ontology - Version 1.0, https://w3id.org/statbarnsdc" ;
+                                dcterms:contributor """Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859
+
+Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021
+
+Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534
+
+Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101""" ;
+                                dcterms:created "2025-11-11"^^xsd:date ;
                                 dcterms:creator "Trupti Padiya - University of the West of England (UWE Bristol), ORCID:0000-0003-4514-4473 " ;
-								dcterms:contributor "Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859 " ,
-                                                        "Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021" ,
-                                                        "Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534" ,
-                                                        "Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101" ;
                                 dcterms:description "An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC)." ;
+                                dcterms:identifier "https://w3id.org/statbarnsdc" ;
+                                dcterms:issued "2025-12-12"^^xsd:date ;
                                 dcterms:license <https://opensource.org/licenses/MIT> ;
+                                dcterms:modified "2026-06-24"^^xsd:date ;
+                                dcterms:publisher "University of the West of England (UWE Bristol)" ;
+                                dcterms:source "https://outputchecking.org/statbarn/" ;
                                 dcterms:title "StatbarnSDC Ontology" ;
+                                bibo:doi "" ;
+                                bibo:status "http://purl.org/ontology/bibo/status/peerReviewed" ,
+                                            "http://purl.org/ontology/bibo/status/unpublished" ;
                                 vann:preferredNamespacePrefix "sdc" ;
-                                skos:scopeNote "The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control." .
+                                vann:preferredNamespaceUri "https://w3id.org/statbarnsdc#" ;
+                                owl:versionInfo 1.0 ;
+                                skos:scopeNote "The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control." ;
+                                foaf:logo <https://w3id.org/StatbarnSDC.png> ;
+                                schema:version "1.0" .
 
 #################################################################
 #    Data properties
@@ -403,7 +420,7 @@
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty risk-owl:hasRiskEvaluation ;
-                             owl:someValuesFrom :PQCheck
+                             owl:someValuesFrom :PPercentCheck
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty dpv-owl:hasLikelihood ;
@@ -582,14 +599,6 @@
                           rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
                           skos:definition "A measure of concentration calculated by summing the squares of the shares of all elements." ;
                           skos:prefLabel "HerfindahlHirschmanIndex" .
-
-
-###  https://w3id.org/statbarnsdc#Histogram
-:Histogram rdf:type owl:Class ;
-           rdfs:subClassOf :Frequencies ;
-           rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
-           skos:definition "A graphical representation of a dataset that displays the frequency of values within consecutive intervals." ;
-           skos:prefLabel "Histogram" .
 
 
 ###  https://w3id.org/statbarnsdc#HomogeneityOfRegression
@@ -1014,6 +1023,7 @@
                        skos:definition "To check the sizes if subgroups (e.g. table cells) meet or exceed the specified value of MinimumThreshold." ;
                        skos:prefLabel "MinimumThresholdCheck" .
 
+
 ###  https://w3id.org/statbarnsdc#Mode
 :Mode rdf:type owl:Class ;
       rdfs:subClassOf :Statbarn ,
@@ -1170,20 +1180,20 @@
                 skos:prefLabel "OutlierRemoval" .
 
 
-###  https://w3id.org/statbarnsdc#PQCheck
-:PQCheck rdf:type owl:Class ;
-         rdfs:subClassOf risk-owl:RiskEvaluation ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty risk-owl:hasRiskCriteria ;
-                           owl:someValuesFrom :PRatio
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty dpv-owl:hasHumanInvolvement ;
-                           owl:allValuesFrom dpv-owl:HumanInvolvement
-                         ] ;
-         rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
-         skos:definition "PQ test utilises the value specified as PRatio" ;
-         skos:prefLabel "PQCheck" .
+###  https://w3id.org/statbarnsdc#PPercentCheck
+:PPercentCheck rdf:type owl:Class ;
+               rdfs:subClassOf risk-owl:RiskEvaluation ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty risk-owl:hasRiskCriteria ;
+                                 owl:someValuesFrom :PRatio
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty dpv-owl:hasHumanInvolvement ;
+                                 owl:allValuesFrom dpv-owl:HumanInvolvement
+                               ] ;
+               rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
+               skos:definition "PQ test utilises the value specified as PRatio" ;
+               skos:prefLabel "PQCheck" .
 
 
 ###  https://w3id.org/statbarnsdc#PRatio
@@ -1480,14 +1490,6 @@
           rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
           skos:definition "A statistical measure that describes the asymmetry of a data distribution around its mean." ;
           skos:prefLabel "Skewness" .
-
-
-###  https://w3id.org/statbarnsdc#SmoothedHistogram
-:SmoothedHistogram rdf:type owl:Class ;
-                   rdfs:subClassOf :Frequencies ;
-                   rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
-                   skos:definition "A visualization of a dataset’s distribution where raw histogram counts are smoothed to show a continuous approximation of the underlying probability density." ;
-                   skos:prefLabel "SmoothedHistogram" .
 
 
 ###  https://w3id.org/statbarnsdc#SpearmansRankCorrelationCoefficient
