@@ -111,7 +111,7 @@
     "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/statbarnsdc#PQCheck"
+    "@id" : "https://w3id.org/statbarnsdc#PPercentCheck"
   } ]
 }, {
   "@id" : "_:genid22",
@@ -749,14 +749,15 @@
 }, {
   "@id" : "https://w3id.org/statbarnsdc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Trupti Padiya, Jim Smith, Felix Ritchie, Elizabeth Green, Amy Tilbrook, StatbarnSDC Ontology - Version 1.0, https://w3id.org/statbarnsdc"
+  } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101"
-  }, {
-    "@value" : "Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534"
-  }, {
-    "@value" : "Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021"
-  }, {
-    "@value" : "Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859 "
+    "@value" : "Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859\n\nFelix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021\n\nElizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534\n\nAmy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-11-11"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Trupti Padiya - University of the West of England (UWE Bristol), ORCID:0000-0003-4514-4473 "
@@ -764,14 +765,42 @@
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC)."
   } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/statbarnsdc"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-12-12"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://opensource.org/licenses/MIT"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-06-24"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "University of the West of England (UWE Bristol)"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://outputchecking.org/statbarn/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "StatbarnSDC Ontology"
   } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@value" : ""
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "http://purl.org/ontology/bibo/status/peerReviewed"
+  }, {
+    "@value" : "http://purl.org/ontology/bibo/status/unpublished"
+  } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "sdc"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/statbarnsdc#"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://w3id.org/dpv/2.2/owl#"
@@ -781,8 +810,18 @@
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/statbarnsdc/1.0"
   } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@value" : "The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control."
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://w3id.org/StatbarnSDC.png"
+  } ],
+  "https://schema.org/version" : [ {
+    "@value" : "1.0"
   } ]
 }, {
   "@id" : "https://w3id.org/statbarnsdc#AdditiveNoise",
@@ -1613,21 +1652,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "HerfindahlHirschmanIndex"
-  } ]
-}, {
-  "@id" : "https://w3id.org/statbarnsdc#Histogram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://w3id.org/statbarnsdc"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "A graphical representation of a dataset that displays the frequency of values within consecutive intervals."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "Histogram"
   } ]
 }, {
   "@id" : "https://w3id.org/statbarnsdc#HomogeneityOfRegression",
@@ -2552,7 +2576,7 @@
     "@value" : "OutlierRemoval"
   } ]
 }, {
-  "@id" : "https://w3id.org/statbarnsdc#PQCheck",
+  "@id" : "https://w3id.org/statbarnsdc#PPercentCheck",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/statbarnsdc"
@@ -3058,21 +3082,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "Skewness"
-  } ]
-}, {
-  "@id" : "https://w3id.org/statbarnsdc#SmoothedHistogram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://w3id.org/statbarnsdc"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/statbarnsdc#Frequencies"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "A visualization of a dataset’s distribution where raw histogram counts are smoothed to show a continuous approximation of the underlying probability density."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "SmoothedHistogram"
   } ]
 }, {
   "@id" : "https://w3id.org/statbarnsdc#SpearmansRankCorrelationCoefficient",
