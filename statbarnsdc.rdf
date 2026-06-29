@@ -5,7 +5,6 @@
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:sdc="https://w3id.org/statbarnsdc"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
@@ -24,16 +23,33 @@
         <owl:versionIRI rdf:resource="https://w3id.org/statbarnsdc/1.0"/>
         <owl:imports rdf:resource="https://w3id.org/dpv/2.2/owl#"/>
         <owl:imports rdf:resource="https://w3id.org/dpv/2.2/risk/owl#"/>
+        <dcterms:bibliographicCitation>Trupti Padiya, Jim Smith, Felix Ritchie, Elizabeth Green, Amy Tilbrook, StatbarnSDC Ontology - Version 1.0, https://w3id.org/statbarnsdc</dcterms:bibliographicCitation>
+        <dcterms:contributor>Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859
+
+Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021
+
+Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534
+
+Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101</dcterms:contributor>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-11</dcterms:created>
         <dcterms:creator>Trupti Padiya - University of the West of England (UWE Bristol), ORCID:0000-0003-4514-4473 </dcterms:creator>
-		<dcterms:contributor>Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859 </dcterms:contributor>
-        <dcterms:contributor>Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021</dcterms:contributor>
-        <dcterms:contributor>Elizabeth Green - University of the West of England (UWE Bristol), ORCID: 0000-0002-5199-9534</dcterms:contributor>
-        <dcterms:contributor>Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002-0294-2101</dcterms:contributor>
         <dcterms:description>An Ontology for the Statbarn Framework used in Output Statistical Disclosure Control (OSDC).</dcterms:description>
+        <dcterms:identifier>https://w3id.org/statbarnsdc</dcterms:identifier>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-12</dcterms:issued>
         <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-24</dcterms:modified>
+        <dcterms:publisher>University of the West of England (UWE Bristol)</dcterms:publisher>
+        <dcterms:source>https://outputchecking.org/statbarn/</dcterms:source>
         <dcterms:title>StatbarnSDC Ontology</dcterms:title>
+        <bibo:doi></bibo:doi>
+        <bibo:status>http://purl.org/ontology/bibo/status/peerReviewed</bibo:status>
+        <bibo:status>http://purl.org/ontology/bibo/status/unpublished</bibo:status>
         <vann:preferredNamespacePrefix>sdc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/statbarnsdc#</vann:preferredNamespaceUri>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <skos:scopeNote>The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control.</skos:scopeNote>
+        <foaf:logo rdf:resource="https://w3id.org/StatbarnSDC.png"/>
+        <schema:version>1.0</schema:version>
     </owl:Ontology>
     
 
@@ -572,7 +588,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PQCheck"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PPercentCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -823,17 +839,6 @@
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>A measure of concentration calculated by summing the squares of the shares of all elements.</skos:definition>
         <skos:prefLabel>HerfindahlHirschmanIndex</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/statbarnsdc#Histogram -->
-
-    <owl:Class rdf:about="https://w3id.org/statbarnsdc#Histogram">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Frequencies"/>
-        <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
-        <skos:definition>A graphical representation of a dataset that displays the frequency of values within consecutive intervals.</skos:definition>
-        <skos:prefLabel>Histogram</skos:prefLabel>
     </owl:Class>
     
 
@@ -1649,9 +1654,9 @@
     
 
 
-    <!-- https://w3id.org/statbarnsdc#PQCheck -->
+    <!-- https://w3id.org/statbarnsdc#PPercentCheck -->
 
-    <owl:Class rdf:about="https://w3id.org/statbarnsdc#PQCheck">
+    <owl:Class rdf:about="https://w3id.org/statbarnsdc#PPercentCheck">
         <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2081,17 +2086,6 @@
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>A statistical measure that describes the asymmetry of a data distribution around its mean.</skos:definition>
         <skos:prefLabel>Skewness</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/statbarnsdc#SmoothedHistogram -->
-
-    <owl:Class rdf:about="https://w3id.org/statbarnsdc#SmoothedHistogram">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Frequencies"/>
-        <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
-        <skos:definition>A visualization of a dataset’s distribution where raw histogram counts are smoothed to show a continuous approximation of the underlying probability density.</skos:definition>
-        <skos:prefLabel>SmoothedHistogram</skos:prefLabel>
     </owl:Class>
     
 
