@@ -747,6 +747,9 @@
     } ]
   } ]
 }, {
+  "@id" : "https://schema.org/isbasedon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://w3id.org/statbarnsdc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
@@ -789,7 +792,7 @@
     "@value" : "StatbarnSDC Ontology"
   } ],
   "http://purl.org/ontology/bibo/doi" : [ {
-    "@value" : ""
+    "@value" : "https://doi.org/10.5281/zenodo.17143221"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "http://purl.org/ontology/bibo/status/peerReviewed"
@@ -819,6 +822,9 @@
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@id" : "https://w3id.org/StatbarnSDC.png"
+  } ],
+  "https://schema.org/isbasedon" : [ {
+    "@value" : "https://doi.org/10.5281/zenodo.17143221"
   } ],
   "https://schema.org/version" : [ {
     "@value" : "1.0"
