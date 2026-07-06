@@ -41,7 +41,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <dcterms:publisher>University of the West of England (UWE Bristol)</dcterms:publisher>
         <dcterms:source>https://outputchecking.org/statbarn/</dcterms:source>
         <dcterms:title>StatbarnSDC Ontology</dcterms:title>
-        <bibo:doi></bibo:doi>
+        <bibo:doi>https://doi.org/10.5281/zenodo.17143221</bibo:doi>
         <bibo:status>http://purl.org/ontology/bibo/status/peerReviewed</bibo:status>
         <bibo:status>http://purl.org/ontology/bibo/status/unpublished</bibo:status>
         <vann:preferredNamespacePrefix>sdc</vann:preferredNamespacePrefix>
@@ -49,8 +49,26 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <skos:scopeNote>The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control.</skos:scopeNote>
         <foaf:logo rdf:resource="https://w3id.org/StatbarnSDC.png"/>
+        <schema:isbasedon>https://doi.org/10.5281/zenodo.17143221</schema:isbasedon>
         <schema:version>1.0</schema:version>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.org/isbasedon -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/isbasedon"/>
     
 
 
