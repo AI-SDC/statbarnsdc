@@ -2398,50 +2398,6 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <skos:definition>A simple bivariate correlation between two variables</skos:definition>
         <skos:prefLabel>ZeroOrderCorrelation</skos:prefLabel>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#CalculatedRatios"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#Clusters"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#CorrelationCoefficients"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#Endpoints"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#Frequencies"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#GiniCoefficient"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#HazardSurvivalTables"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#LinearAggregations"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#LinkedMultilevelTables"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#Mode"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#NonLinearConcentrationRatios"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#Position"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#Shape"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#StatisticalHypothesisTests"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#KValue"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#MinimumDOF"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#MinimumThreshold"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#NValue"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#PRatio"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#PresenceOfLinkedTables"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#PresenceOfZero"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#StatbarnRelevantShowData"/>
-            <rdf:Description rdf:about="https://w3id.org/statbarnsdc#ZeroCheckDecider"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
