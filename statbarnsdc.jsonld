@@ -8,30 +8,6 @@
     "@id" : "https://w3id.org/statbarnsdc#StatbarnDataCheck"
   } ]
 }, {
-  "@id" : "_:genid106",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/statbarnsdc#KValue"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#MinimumDOF"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#MinimumThreshold"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#NValue"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#PRatio"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTables"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#PresenceOfZero"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#StatbarnRelevantShowData"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#ZeroCheckDecider"
-    } ]
-  } ]
-}, {
   "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
@@ -711,40 +687,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "_:genid91",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/statbarnsdc#CalculatedRatios"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#Clusters"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#CorrelationCoefficients"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#Endpoints"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#Frequencies"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#GiniCoefficient"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#HazardSurvivalTables"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#LinearAggregations"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#LinkedMultilevelTables"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#Mode"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#NonLinearConcentrationRatios"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#Position"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#Shape"
-    }, {
-      "@id" : "https://w3id.org/statbarnsdc#StatisticalHypothesisTests"
-    } ]
   } ]
 }, {
   "@id" : "https://schema.org/isbasedon",
