@@ -3,9 +3,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -19,12 +19,7 @@
                                 owl:versionIRI <https://w3id.org/statbarnsdc/1.0> ;
                                 owl:imports <https://w3id.org/dpv/2.2/owl#> ,
                                             <https://w3id.org/dpv/2.2/risk/owl#> ;
-                                bibo:doi "https://doi.org/10.5281/zenodo.17143221" ;
-                                bibo:status "http://purl.org/ontology/bibo/status/peerReviewed" ,
-                                                                              "http://purl.org/ontology/bibo/status/unpublished" ; #Ontology schema was peer reviewed at United Nations Expert meeting on Statistical Data Confidentiality 2025, the implementation is deployed at https://w3id.org/statbarnsdc, and the manuscript is in preparation.
                                 dcterms:bibliographicCitation "Trupti Padiya, Jim Smith, Felix Ritchie, Elizabeth Green, Amy Tilbrook, StatbarnSDC Ontology - Version 1.0, https://w3id.org/statbarnsdc" ;
-								dcterms:source "https://outputchecking.org/statbarn/" ;
-								dcterms:identifier "https://w3id.org/statbarnsdc" ;
                                 dcterms:contributor """Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859
 
 Felix Ritchie - University of the West of England (UWE Bristol), ORCID:0000-0003-4097-4021
@@ -40,15 +35,26 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
                                 dcterms:license <https://opensource.org/licenses/MIT> ;
                                 dcterms:modified "2026-06-24"^^xsd:date ;
                                 dcterms:publisher "University of the West of England (UWE Bristol)" ;
+                                dcterms:source "https://outputchecking.org/statbarn/" ;
                                 dcterms:title "StatbarnSDC Ontology" ;
+                                bibo:doi "https://doi.org/10.5281/zenodo.17143221" ;
+                                bibo:status "http://purl.org/ontology/bibo/status/peerReviewed" ,
+                                            "http://purl.org/ontology/bibo/status/unpublished" ;
                                 vann:preferredNamespacePrefix "sdc" ;
                                 vann:preferredNamespaceUri "https://w3id.org/statbarnsdc#" ;
-							    owl:versionInfo 1.0 ;
+                                owl:versionInfo 1.0 ;
                                 skos:scopeNote "The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control." ;
                                 foaf:logo <https://w3id.org/StatbarnSDC.png> ;
-                                schema:version "1.0" ;
-								schema:isbasedon "https://doi.org/10.5281/zenodo.17143221" .
-								
+                                schema:isbasedon "https://doi.org/10.5281/zenodo.17143221" ;
+                                schema:version "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://schema.org/isbasedon
+schema:isbasedon rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Data properties
@@ -1704,43 +1710,6 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
                       rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
                       skos:definition "A simple bivariate correlation between two variables" ;
                       skos:prefLabel "ZeroOrderCorrelation" .
-
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :CalculatedRatios
-                :Clusters
-                :CorrelationCoefficients
-                :Endpoints
-                :Frequencies
-                :GiniCoefficient
-                :HazardSurvivalTables
-                :LinearAggregations
-                :LinkedMultilevelTables
-                :Mode
-                :NonLinearConcentrationRatios
-                :Position
-                :Shape
-                :StatisticalHypothesisTests
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :KValue
-                :MinimumDOF
-                :MinimumThreshold
-                :NValue
-                :PRatio
-                :PresenceOfLinkedTables
-                :PresenceOfZero
-                :StatbarnRelevantShowData
-                :ZeroCheckDecider
-              )
-] .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
