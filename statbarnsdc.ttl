@@ -11,14 +11,14 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dpv-owl: <https://w3id.org/dpv/owl#> .
-@prefix risk-owl: <https://w3id.org/dpv/risk/owl#> .
+@prefix dpv-owl: <https://w3id.org/dpv/2.2/owl#> .
+@prefix risk-owl: <https://w3id.org/dpv/2.2/risk/owl#> .
 @base <https://w3id.org/statbarnsdc#> .
 
 <https://w3id.org/statbarnsdc> rdf:type owl:Ontology ;
                                 owl:versionIRI <https://w3id.org/statbarnsdc/1.0> ;
-                                owl:imports <https://w3id.org/dpv/2.2/owl#> ,
-                                            <https://w3id.org/dpv/2.2/risk/owl#> ;
+                                owl:imports dpv-owl: ,
+                                            risk-owl: ;
                                 dcterms:bibliographicCitation "Trupti Padiya, Jim Smith, Felix Ritchie, Elizabeth Green, Amy Tilbrook, StatbarnSDC Ontology - Version 1.0, https://w3id.org/statbarnsdc" ;
                                 dcterms:contributor """Jim Smith - University of the West of England (UWE Bristol), ORCID:0000-0001-7908-1859
 
@@ -33,7 +33,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
                                 dcterms:identifier "https://w3id.org/statbarnsdc" ;
                                 dcterms:issued "2025-12-12"^^xsd:date ;
                                 dcterms:license <https://opensource.org/licenses/MIT> ;
-                                dcterms:modified "2026-07-07"^^xsd:date ;
+                                dcterms:modified "2026-06-24"^^xsd:date ;
                                 dcterms:publisher "University of the West of England (UWE Bristol)" ;
                                 dcterms:source "https://outputchecking.org/statbarn/" ;
                                 dcterms:title "StatbarnSDC Ontology" ;
@@ -54,6 +54,38 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
 
 ###  https://schema.org/isbasedon
 schema:isbasedon rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/dpv/2.2/owl#hasHumanInvolvement
+dpv-owl:hasHumanInvolvement rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/dpv/2.2/owl#hasLikelihood
+dpv-owl:hasLikelihood rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/dpv/2.2/owl#hasRisk
+dpv-owl:hasRisk rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/dpv/2.2/owl#hasRiskLevel
+dpv-owl:hasRiskLevel rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure
+dpv-owl:isMitigatedByMeasure rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria
+risk-owl:hasRiskCriteria rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation
+risk-owl:hasRiskEvaluation rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -79,6 +111,34 @@ schema:isbasedon rdf:type owl:AnnotationProperty .
 #################################################################
 #    Classes
 #################################################################
+
+###  https://w3id.org/dpv/2.2/owl#HumanInvolvement
+dpv-owl:HumanInvolvement rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv/2.2/owl#Likelihood
+dpv-owl:Likelihood rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv/2.2/owl#Risk
+dpv-owl:Risk rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv/2.2/owl#RiskLevel
+dpv-owl:RiskLevel rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv/2.2/risk/owl#MitigationControl
+risk-owl:MitigationControl rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv/2.2/risk/owl#RiskCriteria
+risk-owl:RiskCriteria rdf:type owl:Class .
+
+
+###  https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation
+risk-owl:RiskEvaluation rdf:type owl:Class .
+
 
 ###  https://w3id.org/statbarnsdc#AdditiveNoise
 :AdditiveNoise rdf:type owl:Class ;
