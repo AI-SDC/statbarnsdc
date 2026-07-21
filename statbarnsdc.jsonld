@@ -2,7 +2,7 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#StatbarnDataCheck"
@@ -14,13 +14,13 @@
     "@id" : "https://w3id.org/statbarnsdc#PresenceOfZeroCheck"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ]
 }, {
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowDOF"
@@ -29,7 +29,7 @@
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"
@@ -38,10 +38,10 @@
   "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid16",
@@ -50,7 +50,7 @@
     "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+    "@id" : "https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"
   } ]
 }, {
   "@id" : "_:genid17",
@@ -66,16 +66,16 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#NKCheck"
@@ -84,7 +84,7 @@
   "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#PPercentCheck"
@@ -93,10 +93,10 @@
   "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid23",
@@ -105,7 +105,7 @@
     "@id" : "_:genid24"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+    "@id" : "https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"
   } ]
 }, {
   "@id" : "_:genid24",
@@ -125,7 +125,7 @@
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
@@ -134,16 +134,16 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#RiskLevel"
+    "@id" : "https://w3id.org/dpv/2.2/owl#RiskLevel"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRiskLevel"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRiskLevel"
   } ]
 }, {
   "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowCount"
@@ -152,7 +152,7 @@
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
@@ -161,7 +161,7 @@
   "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#Differencing"
@@ -170,7 +170,7 @@
   "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowCount"
@@ -179,7 +179,7 @@
   "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowCount"
@@ -188,7 +188,7 @@
   "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#ImplicitTables"
@@ -197,7 +197,7 @@
   "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowDOF"
@@ -206,7 +206,7 @@
   "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#StatbarnDataCheck"
@@ -215,25 +215,25 @@
   "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#RiskLevel"
+    "@id" : "https://w3id.org/dpv/2.2/owl#RiskLevel"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRiskLevel"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRiskLevel"
   } ]
 }, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#AuxiliaryInformation"
@@ -251,7 +251,7 @@
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#Differencing"
@@ -260,7 +260,7 @@
   "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#Dominance"
@@ -269,7 +269,7 @@
   "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowCount"
@@ -278,7 +278,7 @@
   "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#MinimumThresholdCheck"
@@ -287,10 +287,10 @@
   "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid46",
@@ -299,7 +299,7 @@
     "@id" : "_:genid47"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+    "@id" : "https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"
   } ]
 }, {
   "@id" : "_:genid47",
@@ -317,7 +317,7 @@
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#Dominance"
@@ -326,7 +326,7 @@
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#MinimumDoFCheck"
@@ -335,10 +335,10 @@
   "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid53",
@@ -347,7 +347,7 @@
     "@id" : "_:genid54"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+    "@id" : "https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"
   } ]
 }, {
   "@id" : "_:genid54",
@@ -376,7 +376,7 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#RequiredZeroCheck"
@@ -385,7 +385,7 @@
   "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#MinimumDOF"
@@ -394,10 +394,10 @@
   "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid62",
@@ -412,7 +412,7 @@
   "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#MinimumThreshold"
@@ -421,16 +421,16 @@
   "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
@@ -439,7 +439,7 @@
   "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#KValue"
@@ -448,7 +448,7 @@
   "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#NValue"
@@ -457,10 +457,10 @@
   "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid69",
@@ -475,16 +475,16 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Likelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasLikelihood"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood"
   } ]
 }, {
   "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#Dominance"
@@ -493,7 +493,7 @@
   "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowCount"
@@ -502,7 +502,7 @@
   "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#PRatio"
@@ -511,10 +511,10 @@
   "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid74",
@@ -529,7 +529,7 @@
   "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#ClassDisclosure"
@@ -538,7 +538,7 @@
   "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowCount"
@@ -547,7 +547,7 @@
   "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#PresenceOfLinkedTables"
@@ -556,10 +556,10 @@
   "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid79",
@@ -577,7 +577,7 @@
     "@id" : "_:genid9"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#isMitigatedByMeasure"
+    "@id" : "https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"
   } ]
 }, {
   "@id" : "_:genid80",
@@ -592,7 +592,7 @@
   "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#PresenceOfZero"
@@ -601,16 +601,16 @@
   "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#ZeroCheckDecider"
@@ -619,16 +619,16 @@
   "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowDOF"
@@ -637,7 +637,7 @@
   "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#hasRiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#StatbarnRelevantShowData"
@@ -646,10 +646,10 @@
   "@id" : "_:genid87",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/dpv/owl#HumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasHumanInvolvement"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"
   } ]
 }, {
   "@id" : "_:genid88",
@@ -664,7 +664,7 @@
   "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/dpv/owl#hasRisk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/statbarnsdc#LowDOF"
@@ -691,6 +691,48 @@
 }, {
   "@id" : "https://schema.org/isbasedon",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#HumanInvolvement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#Likelihood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#RiskLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#hasHumanInvolvement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#hasLikelihood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#hasRiskLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/risk/owl#MitigationControl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/statbarnsdc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -722,7 +764,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-07-07"
+    "@value" : "2026-06-24"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "University of the West of England (UWE Bristol)"
@@ -808,7 +850,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#MitigationControl"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A risk mitigation technique where individual data are combined into larger groups or summaries to reduce the risk of identifying or inferring information about specific individuals."
@@ -868,7 +910,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Risk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Risk"
   }, {
     "@id" : "_:genid1"
   }, {
@@ -1058,7 +1100,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Risk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Risk"
   }, {
     "@id" : "_:genid6"
   }, {
@@ -1278,7 +1320,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Risk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Risk"
   }, {
     "@id" : "_:genid14"
   }, {
@@ -1329,7 +1371,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Risk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Risk"
   }, {
     "@id" : "_:genid20"
   }, {
@@ -1668,7 +1710,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Risk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Risk"
   }, {
     "@id" : "_:genid37"
   }, {
@@ -1719,7 +1761,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid40"
   } ],
@@ -2012,7 +2054,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Risk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Risk"
   }, {
     "@id" : "_:genid44"
   }, {
@@ -2033,7 +2075,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/owl#Risk"
+    "@id" : "https://w3id.org/dpv/2.2/owl#Risk"
   }, {
     "@id" : "_:genid51"
   }, {
@@ -2204,7 +2246,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid59"
   } ],
@@ -2221,7 +2263,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid60"
   }, {
@@ -2240,7 +2282,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid62"
   } ],
@@ -2257,7 +2299,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid63"
   }, {
@@ -2383,7 +2425,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid66"
   }, {
@@ -2404,7 +2446,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid69"
   } ],
@@ -2436,7 +2478,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#MitigationControl"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Random or controlled perturbation added to data or outputs to mask individual contributions and reduce disclosure risk."
@@ -2515,7 +2557,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#MitigationControl"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Extreme or unusual values are removed or masked to prevent identification of individuals and reduce disclosure risk."
@@ -2530,7 +2572,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid72"
   }, {
@@ -2549,7 +2591,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid74"
   } ],
@@ -2720,7 +2762,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid77"
   }, {
@@ -2739,7 +2781,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid79"
   } ],
@@ -2756,7 +2798,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid80"
   } ],
@@ -2773,7 +2815,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid81"
   }, {
@@ -2912,7 +2954,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid83"
   }, {
@@ -2946,7 +2988,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#MitigationControl"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Numerical values are rounded to a specified precision to reduce the risk."
@@ -3095,7 +3137,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskEvaluation"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"
   }, {
     "@id" : "_:genid86"
   }, {
@@ -3114,7 +3156,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid88"
   } ],
@@ -3178,7 +3220,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#MitigationControl"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#MitigationControl"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Sensitive cells or values are deliberately withheld or hidden to prevent disclosure risk."
@@ -3373,7 +3415,7 @@
     "@value" : "https://w3id.org/statbarnsdc"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/dpv/risk/owl#RiskCriteria"
+    "@id" : "https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"
   }, {
     "@id" : "_:genid90"
   } ],
