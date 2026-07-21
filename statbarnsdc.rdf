@@ -17,8 +17,8 @@
      xmlns:scoro="http://purl.org/spar/scoro/"
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:dpv-owl="https://w3id.org/dpv/owl#"
-     xmlns:risk-owl="https://w3id.org/dpv/risk/owl#">
+     xmlns:dpv-owl="https://w3id.org/dpv/2.2/owl#"
+     xmlns:risk-owl="https://w3id.org/dpv/2.2/risk/owl#">
     <owl:Ontology rdf:about="https://w3id.org/statbarnsdc">
         <owl:versionIRI rdf:resource="https://w3id.org/statbarnsdc/1.0"/>
         <owl:imports rdf:resource="https://w3id.org/dpv/2.2/owl#"/>
@@ -37,7 +37,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <dcterms:identifier>https://w3id.org/statbarnsdc</dcterms:identifier>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-12</dcterms:issued>
         <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-07</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-24</dcterms:modified>
         <dcterms:publisher>University of the West of England (UWE Bristol)</dcterms:publisher>
         <dcterms:source>https://outputchecking.org/statbarn/</dcterms:source>
         <dcterms:title>StatbarnSDC Ontology</dcterms:title>
@@ -69,6 +69,59 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://schema.org/isbasedon -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/isbasedon"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#hasHumanInvolvement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#hasLikelihood -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#hasRisk -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/2.2/owl#hasRisk"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#hasRiskLevel -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/2.2/owl#hasRiskLevel"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
     
 
 
@@ -116,6 +169,48 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     
 
 
+    <!-- https://w3id.org/dpv/2.2/owl#HumanInvolvement -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#Likelihood -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/2.2/owl#Likelihood"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#Risk -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/2.2/owl#Risk"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/owl#RiskLevel -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/2.2/owl#RiskLevel"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/risk/owl#MitigationControl -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/2.2/risk/owl#MitigationControl"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/risk/owl#RiskCriteria -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
+    
+
+
+    <!-- https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
+    
+
+
     <!-- https://w3id.org/statbarnsdc#AdditiveNoise -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#AdditiveNoise">
@@ -141,7 +236,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#Aggregation -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#Aggregation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#MitigationControl"/>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>A risk mitigation technique where individual data are combined into larger groups or summaries to reduce the risk of identifying or inferring information about specific individuals.</skos:definition>
         <skos:prefLabel>Aggregation</skos:prefLabel>
@@ -185,23 +280,23 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#AuxiliaryInformation -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#AuxiliaryInformation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#StatbarnDataCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRiskLevel"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#RiskLevel"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRiskLevel"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#RiskLevel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -283,13 +378,13 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#AuxiliaryInformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#Dominance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -347,22 +442,22 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#ClassDisclosure -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#ClassDisclosure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#RequiredZeroCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -375,7 +470,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PresenceOfZeroCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -480,7 +575,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowDOF"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -538,22 +633,22 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#Differencing -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#Differencing">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PresenceOfLinkedTableCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -596,28 +691,28 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#Dominance -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#Dominance">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#NKCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PPercentCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -654,13 +749,13 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#ClassDisclosure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -699,19 +794,19 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#ClassDisclosure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#Differencing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -772,7 +867,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -811,13 +906,13 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#ImplicitTables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowDOF"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -908,23 +1003,23 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#ImplicitTables -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#ImplicitTables">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#StatbarnDataCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRiskLevel"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#RiskLevel"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRiskLevel"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#RiskLevel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -959,7 +1054,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#KValue -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#KValue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasDecimalValue"/>
@@ -1100,19 +1195,19 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#Differencing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#Dominance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1192,22 +1287,22 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#LowCount -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#LowCount">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#MinimumThresholdCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1229,22 +1324,22 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#LowDOF -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#LowDOF">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/owl#Risk"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskEvaluation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskEvaluation"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#MinimumDoFCheck"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasLikelihood"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#Likelihood"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasLikelihood"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#Likelihood"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#isMitigatedByMeasure"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#isMitigatedByMeasure"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1377,7 +1472,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#MinimumDOF -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#MinimumDOF">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasDecimalValue"/>
@@ -1394,17 +1489,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#MinimumDoFCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#MinimumDoFCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#MinimumDOF"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1417,7 +1512,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#MinimumThreshold -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#MinimumThreshold">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasDecimalValue"/>
@@ -1434,17 +1529,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#MinimumThresholdCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#MinimumThresholdCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#MinimumThreshold"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1460,7 +1555,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#ClassDisclosure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1540,23 +1635,23 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#NKCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#NKCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#KValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#NValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1569,7 +1664,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#NValue -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#NValue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasDecimalValue"/>
@@ -1597,7 +1692,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#Noise -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#Noise">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#MitigationControl"/>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>Random or controlled perturbation added to data or outputs to mask individual contributions and reduce disclosure risk.</skos:definition>
         <skos:prefLabel>Noise</skos:prefLabel>
@@ -1611,13 +1706,13 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#Dominance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1664,7 +1759,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#OutlierRemoval -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#OutlierRemoval">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#MitigationControl"/>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>Extreme or unusual values are removed or masked to prevent identification of individuals and reduce disclosure risk.</skos:definition>
         <skos:prefLabel>OutlierRemoval</skos:prefLabel>
@@ -1675,17 +1770,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#PPercentCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#PPercentCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PRatio"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1698,7 +1793,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#PRatio -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#PRatio">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasDecimalValue"/>
@@ -1817,13 +1912,13 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#ClassDisclosure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1837,17 +1932,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#PresenceOfLinkedTableCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#PresenceOfLinkedTableCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PresenceOfLinkedTables"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -1860,7 +1955,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#PresenceOfLinkedTables -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#PresenceOfLinkedTables">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasBooleanValue"/>
@@ -1877,7 +1972,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#PresenceOfZero -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#PresenceOfZero">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasBooleanValue"/>
@@ -1894,17 +1989,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#PresenceOfZeroCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#PresenceOfZeroCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#PresenceOfZero"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -2005,17 +2100,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#RequiredZeroCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#RequiredZeroCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#ZeroCheckDecider"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -2039,7 +2134,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#Rounding -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#Rounding">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#MitigationControl"/>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>Numerical values are rounded to a specified precision to reduce the risk.</skos:definition>
         <skos:prefLabel>Rounding</skos:prefLabel>
@@ -2075,7 +2170,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowDOF"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2154,17 +2249,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#StatbarnDataCheck -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#StatbarnDataCheck">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskEvaluation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskEvaluation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/risk/owl#hasRiskCriteria"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/risk/owl#hasRiskCriteria"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#StatbarnRelevantShowData"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasHumanInvolvement"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/owl#HumanInvolvement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasHumanInvolvement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/dpv/2.2/owl#HumanInvolvement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
@@ -2177,7 +2272,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#StatbarnRelevantShowData -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#StatbarnRelevantShowData">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasBooleanValue"/>
@@ -2197,7 +2292,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <rdfs:subClassOf rdf:resource="https://w3id.org/statbarnsdc#Statbarn"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/dpv/owl#hasRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/dpv/2.2/owl#hasRisk"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/statbarnsdc#LowDOF"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2233,7 +2328,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#Suppression -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#Suppression">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#MitigationControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#MitigationControl"/>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>Sensitive cells or values are deliberately withheld or hidden to prevent disclosure risk.</skos:definition>
         <skos:prefLabel>Suppression</skos:prefLabel>
@@ -2376,7 +2471,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     <!-- https://w3id.org/statbarnsdc#ZeroCheckDecider -->
 
     <owl:Class rdf:about="https://w3id.org/statbarnsdc#ZeroCheckDecider">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk/owl#RiskCriteria"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/2.2/risk/owl#RiskCriteria"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/statbarnsdc#hasBooleanValue"/>
