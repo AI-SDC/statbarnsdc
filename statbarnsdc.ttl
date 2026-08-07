@@ -1202,7 +1202,7 @@ schema:isbasedon rdf:type owl:AnnotationProperty .
                                ] ;
                rdfs:isDefinedBy "https://w3id.org/statbarnsdc" ;
                skos:definition "PQ test utilises the value specified as PRatio" ;
-               skos:prefLabel "PQCheck" .
+               skos:prefLabel "PPercentCheck" .
 
 
 ###  https://w3id.org/statbarnsdc#PRatio
