@@ -1690,7 +1690,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         </rdfs:subClassOf>
         <rdfs:isDefinedBy>https://w3id.org/statbarnsdc</rdfs:isDefinedBy>
         <skos:definition>PQ test utilises the value specified as PRatio</skos:definition>
-        <skos:prefLabel>PQCheck</skos:prefLabel>
+        <skos:prefLabel>PPercentCheck</skos:prefLabel>
     </owl:Class>
     
 
