@@ -2540,7 +2540,7 @@
     "@value" : "PQ test utilises the value specified as PRatio"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "PQCheck"
+    "@value" : "PPercentCheck"
   } ]
 }, {
   "@id" : "https://w3id.org/statbarnsdc#PRatio",
