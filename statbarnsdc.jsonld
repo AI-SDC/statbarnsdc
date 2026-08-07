@@ -728,7 +728,7 @@
     "@value" : "University of the West of England (UWE Bristol)"
   } ],
   "http://purl.org/dc/terms/source" : [ {
-    "@value" : "https://outputchecking.org/statbarn/"
+    "@value" : "https://doi.org/10.5281/zenodo.10054628"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "StatbarnSDC Ontology"
