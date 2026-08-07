@@ -34,6 +34,6 @@ We have colour-coded it to make it more human-readable:
 <br>
 
 
-Detailed StatbarnSDC documentation available at: https://w3id.org/statbarnsdc <br> <br>
+Detailed StatbarnSDC documentation is available at: https://w3id.org/statbarnsdc <br> <br>
 More information about the StatbarnSDC schema design can be found here: https://doi.org/10.5281/zenodo.17143221
 
