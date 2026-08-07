@@ -39,7 +39,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-24</dcterms:modified>
         <dcterms:publisher>University of the West of England (UWE Bristol)</dcterms:publisher>
-        <dcterms:source>https://outputchecking.org/statbarn/</dcterms:source>
+        <dcterms:source>https://doi.org/10.5281/zenodo.10054628</dcterms:source>
         <dcterms:title>StatbarnSDC Ontology</dcterms:title>
         <bibo:doi>https://doi.org/10.5281/zenodo.17143221</bibo:doi>
         <bibo:status>http://purl.org/ontology/bibo/status/peerReviewed</bibo:status>
