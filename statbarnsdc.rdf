@@ -49,6 +49,7 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <skos:scopeNote>The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control.</skos:scopeNote>
         <foaf:logo rdf:resource="https://w3id.org/StatbarnSDC.png"/>
+        <schema:includedInDataCatalog rdf:resource="https://doi.org/10.5281/zenodo.22011818"/>
         <schema:isbasedon>https://doi.org/10.5281/zenodo.17143221</schema:isbasedon>
         <schema:version>1.0</schema:version>
     </owl:Ontology>
@@ -63,6 +64,12 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://schema.org/includedInDataCatalog -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/includedInDataCatalog"/>
     
 
 
