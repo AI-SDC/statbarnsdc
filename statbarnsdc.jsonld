@@ -689,6 +689,9 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
+  "@id" : "https://schema.org/includedInDataCatalog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://schema.org/isbasedon",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -764,6 +767,9 @@
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@id" : "https://w3id.org/StatbarnSDC.png"
+  } ],
+  "https://schema.org/includedInDataCatalog" : [ {
+    "@id" : "https://doi.org/10.5281/zenodo.22011818"
   } ],
   "https://schema.org/isbasedon" : [ {
     "@value" : "https://doi.org/10.5281/zenodo.17143221"
