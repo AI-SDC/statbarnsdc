@@ -45,12 +45,17 @@ Amy Tilbrook - University of Edinburgh, Health Data Research UK, ORCID:0000-0002
                                 owl:versionInfo 1.0 ;
                                 skos:scopeNote "The concepts described in the ontology are in accordance with the Statbarn framework used in Output Statistical Disclosure Control." ;
                                 foaf:logo <https://w3id.org/StatbarnSDC.png> ;
+                                schema:includedInDataCatalog <https://doi.org/10.5281/zenodo.22011818> ;
                                 schema:isbasedon "https://doi.org/10.5281/zenodo.17143221" ;
                                 schema:version "1.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  https://schema.org/includedInDataCatalog
+schema:includedInDataCatalog rdf:type owl:AnnotationProperty .
+
 
 ###  https://schema.org/isbasedon
 schema:isbasedon rdf:type owl:AnnotationProperty .
