@@ -1,19 +1,35 @@
-# StatbarnSDC Ontology
+# citation.cff
 
-**Version:** 1.0
-
-## Citation
-
-Trupti Padiya, Jim Smith, Felix Ritchie, Elizabeth Green, Amy Tilbrook. *StatbarnSDC Ontology – Version 1.0*. Available at: <https://w3id.org/statbarnsdc>
-
-## Resource
-
-- **Ontology Name:** StatbarnSDC Ontology
-- **Version:** 1.0
-- **URL:** <https://w3id.org/statbarnsdc>
-
-## Reference
-
-Trupti Padiya, Jim Smith, Felix Ritchie, Elizabeth Green, Amy Tilbrook,  
-*StatbarnSDC Ontology - Version 1.0*,  
-<https://w3id.org/statbarnsdc>
+```yaml
+cff-version: 1.2.0
+title: "StatbarnSDC Ontology"
+version: "1.0"
+authors:
+  - family-names: "Padiya"
+    given-names: "Trupti"
+  - family-names: "Smith"
+    given-names: "Jim"
+  - family-names: "Ritchie"
+    given-names: "Felix"
+  - family-names: "Green"
+    given-names: "Elizabeth"
+  - family-names: "Tilbrook"
+    given-names: "Amy"
+url: "https://w3id.org/statbarnsdc"
+preferred-citation:
+  type: dataset
+  title: "StatbarnSDC Ontology"
+  version: "1.0"
+  authors:
+    - family-names: "Padiya"
+      given-names: "Trupti"
+    - family-names: "Smith"
+      given-names: "Jim"
+    - family-names: "Ritchie"
+      given-names: "Felix"
+    - family-names: "Green"
+      given-names: "Elizabeth"
+    - family-names: "Tilbrook"
+      given-names: "Amy"
+  url: "https://w3id.org/statbarnsdc"
+```
