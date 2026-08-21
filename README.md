@@ -37,3 +37,8 @@ We have colour-coded it to make it more human-readable:
 Detailed StatbarnSDC documentation is available at: https://w3id.org/statbarnsdc <br> <br>
 More information about the StatbarnSDC schema design can be found here: https://doi.org/10.5281/zenodo.17143221
 
+<br>
+<br>
+
+**Acknowledgement**
+This work [was/is] funded by UK Research & Innovation [Grant Number MC_PC_24038] as part of Phase 2 of the DARE UK (Data and Analytics Research Environments UK) programme. DARE UK is funded by UK Research and Innovation (UKRI) and led by Health Data Research UK (HDR UK) and ADR UK (Administrative Data Research UK).
